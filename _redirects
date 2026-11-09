@@ -1,4 +1,4 @@
-# Friendly short links (Netlify only applies these when no real file exists at the path)
+# Short links and old addresses (Cloudflare Pages). www -> main domain is set in the Cloudflare dashboard (Redirect Rules), not here.
 /about-ayoub-cherif.html  /about-ayoub-cherif/  301
 /service-areas.html       /service-areas/       301
 /about              /about-ayoub-cherif/   301
@@ -9,7 +9,4 @@
 /terms              /privacy-and-terms/        301
 /guides             /blog/                     301
 /cobra              /cobra-alternatives/       301
-# www to the main domain (applies once www is added in Netlify domain settings)
-https://www.strattonadvisorygroup.com/*  https://strattonadvisorygroup.com/:splat  301!
-http://www.strattonadvisorygroup.com/*   https://strattonadvisorygroup.com/:splat  301!
 /pre-existing-conditions /pre-existing-conditions-private-health-insurance/ 301
