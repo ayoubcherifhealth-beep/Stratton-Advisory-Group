@@ -1,6 +1,7 @@
 {
   "name": "stratton-advisory-group",
   "compatibility_date": "2026-11-01",
+  "previews": {},
   "assets": {
     "directory": "./",
     "html_handling": "auto-trailing-slash",
