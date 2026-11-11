@@ -16,3 +16,7 @@
 
 /*.webp
   Cache-Control: public, max-age=2592000
+
+# Keep the workers.dev copy of the site out of search results; strattonadvisorygroup.com is the only public host.
+https://stratton-advisory-group.ayoubcherifhealth.workers.dev/*
+  X-Robots-Tag: noindex
