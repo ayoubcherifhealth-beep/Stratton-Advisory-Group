@@ -104,7 +104,7 @@
 .syo-cut span{position:absolute;top:24px;left:50%;transform:translateX(-50%);font-size:.72rem;color:var(--navy);font-weight:600;white-space:nowrap}
 .syo-legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin-top:2.3rem;font-size:.75rem;color:var(--muted)}.syo-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.35rem;vertical-align:-1px}
 .syo-res p{color:var(--text)}
-.syo-cta{display:grid;grid-template-columns:1fr;gap:.7rem;margin-top:1.3rem;max-width:460px}.syo-cta .btn{width:100%;justify-content:center}
+.syo-cta{display:grid;grid-template-columns:1fr;gap:.6rem;margin:1.4rem auto 0;max-width:300px}.syo-cta .btn{width:100%;justify-content:center;padding:.7rem 1rem;font-size:.9rem}
 .syo-facts{font-size:.82rem;color:var(--muted);margin-top:1rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .syo-facts button{background:none;border:0;color:var(--gold-ink);font:inherit;font-weight:600;cursor:pointer;padding:0;text-decoration:underline}
 .syo-trust{display:flex;justify-content:center;gap:1.4rem;flex-wrap:wrap;margin:1.2rem 0 0;font-size:.82rem;color:var(--muted)}.syo-trust span:before{content:"✓ ";color:var(--gold-ink);font-weight:700}
@@ -219,7 +219,7 @@ function show(){var s=S.state,out=$('syo-out'),html,tag,type='Not sure yet',cls,
   body='<p>Your income is about '+Math.round(pct)+'% of the poverty level. Depending on your state, you may qualify for Medicaid or a heavily subsidized Marketplace plan. Start at <a href="https://www.healthcare.gov/" target="_blank" rel="noopener">HealthCare.gov</a>.</p>';type='Low income';}
  var max=Math.max(cut*1.6,v*1.12),p=function(x){return Math.min(100,x/max*100)},a=fpl*1.38,b2=fpl*3;
  var meter='<div class="syo-meter"><div class="ttl">Where you land for 2027</div><div class="syo-track"><div class="z z1" style="width:'+p(a)+'%"></div><div class="z z2" style="width:'+(p(b2)-p(a))+'%"></div><div class="z z3" style="width:'+(p(cut)-p(b2))+'%"></div><div class="z z4" style="flex:1"></div><div class="syo-cut" style="left:'+p(cut)+'%"><span>Cutoff '+k(cut)+'</span></div><div class="syo-pin" id="syo-pin"><b>You: '+k(v)+'</b></div></div><div class="syo-legend"><span><i style="background:#9fcfe0"></i>Low-cost</span><span><i style="background:#8fcaa6"></i>Subsidy likely</span><span><i style="background:var(--gold-2)"></i>Small subsidy</span><span><i style="background:#b9c0d6"></i>Full price</span></div></div>';
- var cta='<div class="syo-cta"><a class="btn btn-ink" href="https://calendar.app.google/EJho68KtW3eEAXxJ9" target="_blank" rel="noopener">Book a free 15-min review</a><a class="btn btn-gold" href="tel:+13214426966">Call (321) 442-6966</a><a class="btn btn-line-dark" href="../get-a-quote/?type='+encodeURIComponent(type)+'">Get a free comparison</a></div>';
+ var cta='<div class="syo-cta"><a class="btn btn-ink" href="https://calendar.app.google/EJho68KtW3eEAXxJ9" target="_blank" rel="noopener">Book a free 15-min review</a><a class="btn btn-gold" href="tel:+13214426966">Call Now</a><a class="btn btn-line-dark" href="../get-a-quote/?type='+encodeURIComponent(type)+'">Get a free comparison</a></div>';
  out.className='syo-res '+cls;
  out.innerHTML='<div class="verdict"><div class="vic">'+icon+'</div><div><span class="tag">'+tag+'</span>'+html+'</div></div>'+meter+body+cta+'<div class="syo-facts"><span>'+NAME[s]+' · household of '+n+' · '+fmt(v)+' · '+Math.round(pct)+'% of poverty level</span><button type="button" id="syo-again">Start over</button></div>';
  go(6);$('syo-again').onclick=reset;
