@@ -280,7 +280,7 @@ function loop(){var o=t.querySelectorAll(".review-set");for(var i=1;i<o.length;i
 loop();
 var R="https://g.page/r/CanKkv-TLHwPEAI/review",C=["#1F3A68","#80632A","#3C4F7A","#5B4A2E","#2B4C7E","#6B5530"];
 function esc(x){return String(x).replace(/[&<>"]/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]})}
-function who(n){var p=String(n||"").trim().split(/\s+/);return p.length>1?p[0]+" "+p[p.length-1].charAt(0).toUpperCase()+".":p[0]||"Google user"}
+function cap(w){return w.charAt(0).toUpperCase()+w.slice(1)}function who(n){var p=String(n||"").replace(/\([^)]*\)?/g," ").replace(/[^\p{L}\p{M}'\- ]/gu," ").trim().split(/\s+/).filter(Boolean);return p.length>1?cap(p[0])+" "+p[p.length-1].charAt(0).toUpperCase()+".":p.length?cap(p[0]):"Google user"}
 function rel(d){var n=Math.max(0,Math.round((Date.now()-Date.parse(d))/864e5));if(n<1)return"today";if(n<7)return n==1?"a day ago":n+" days ago";if(n<30){var w=Math.round(n/7);return w==1?"a week ago":w+" weeks ago"}if(n<365){var m=Math.round(n/30);return m==1?"a month ago":m+" months ago"}var y=Math.round(n/365);return y==1?"a year ago":y+" years ago"}
 if(!window.fetch)return;
 fetch("https://api.featurable.com/v2/widgets/b8db8840-3a8c-4e9e-8d53-024b6ff7b1f4").then(function(r){return r.json()}).then(function(j){
