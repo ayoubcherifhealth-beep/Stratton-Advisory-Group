@@ -166,7 +166,7 @@ var R=[[10,27,"MA"],[28,29,"RI"],[30,38,"NH"],[39,49,"ME"],[50,54,"VT"],[55,55,"
 function st(z){if(!/^\d{5}$/.test(z))return null;var p=+z.slice(0,3);for(var i=0;i<R.length;i++)if(p>=R[i][0]&&p<=R[i][1])return R[i][2];return null}
 function $(id){return document.getElementById(id)}
 function fmt(n){return '$'+Math.round(n).toLocaleString('en-US')}
-function k(n){return n>=1000?'$'+Math.round(n/1000)+'k':fmt(n)}
+function k(n){return n>=1e6?'$'+(Math.round(n/1e4)/100)+'M':(n>=1000?'$'+Math.round(n/1000)+'k':fmt(n))}
 var S={state:null,n:0,inc:150000,h:null},cur=1,hist=[];
 var steps=document.querySelectorAll('#syo .syo-step');
 function go(n,back){if(!back&&cur!==n)hist.push(cur);cur=n;steps.forEach(function(s){s.classList.toggle('on',+s.dataset.step===n)});
