@@ -44,30 +44,115 @@
   <h1 class="h1">Do you qualify for help, or are you paying <span class="accent">full price?</span></h1>
   <p class="lead">Answer four quick questions to see whether you qualify for an ACA subsidy in 2027, and whether a private PPO is worth comparing. Takes 30 seconds. No contact details needed.</p>
 </div></section>
-<section class="section"><div class="wrap" style="max-width:760px">
+<section class="section syo-section"><div class="wrap" style="max-width:820px">
 <style>
-#syo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1.6rem;box-shadow:0 10px 30px rgba(10,20,48,.06)}
-#syo .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}@media(max-width:640px){#syo .row{grid-template-columns:1fr}}
-#syo label{display:block;font-weight:600;font-size:.92rem;color:#0b1633;margin:0 0 .35rem}
-#syo input,#syo select{width:100%;padding:.75rem .85rem;border:1px solid #d9cfba;border-radius:6px;font:inherit;background:#fff}
-#syo .field{margin:0 0 1rem}#syo .hint{font-size:.8rem;color:#5b6170;margin:.3rem 0 0}
-#syo-out{display:none;margin-top:1.4rem;border-top:1px solid var(--line);padding-top:1.4rem}
-#syo-out h2{font-family:var(--serif);font-size:1.45rem;color:#0b1633;margin:0 0 .6rem}
-#syo-out .tag{display:inline-block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .6rem;border-radius:4px;background:var(--gold-soft);color:var(--gold-ink);margin-bottom:.7rem}
-#syo-out .cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.1rem}
-#syo-out .facts{font-size:.85rem;color:#5b6170;margin-top:1rem}
+.syo-section{background:linear-gradient(180deg,var(--ivory) 0,#fff 60%)}
+#syo{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:2rem 2rem 1.6rem;box-shadow:var(--shadow-lg);overflow:hidden;margin-top:-4.5rem;z-index:2}
+@media(max-width:640px){#syo{padding:1.4rem 1.1rem 1.2rem;margin-top:-3rem;border-radius:12px}}
+.syo-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.7rem;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-ink);font-weight:600}
+.syo-back{background:none;border:0;color:var(--muted);font:inherit;font-size:.8rem;letter-spacing:.06em;cursor:pointer;padding:.3rem 0;visibility:hidden}.syo-back.on{visibility:visible}.syo-back:hover{color:var(--navy)}
+.syo-bar{height:6px;background:var(--gold-soft);border-radius:99px;overflow:hidden;margin-bottom:1.8rem}.syo-bar i{display:block;height:100%;width:25%;background:linear-gradient(90deg,var(--gold),var(--gold-2));border-radius:99px;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.syo-step{display:none;animation:syoIn .45s cubic-bezier(.2,.8,.2,1)}.syo-step.on{display:block}
+@keyframes syoIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+.syo-q{font-family:var(--serif);font-size:clamp(1.35rem,3.2vw,1.85rem);line-height:1.2;color:var(--ink);margin:0 0 .4rem}
+.syo-sub{color:var(--muted);margin:0 0 1.4rem;font-size:.97rem}
+.syo-zip{display:flex;gap:.8rem;align-items:stretch;flex-wrap:wrap}
+.syo-zip input{flex:1 1 220px;font-size:2rem!important;letter-spacing:.35em;text-align:center;padding:.7rem 1rem;border:2px solid #e2d7bf;border-radius:12px;font-family:var(--sans);color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.syo-zip input:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px #c3a15c33}
+.syo-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;padding:.55rem .9rem;border-radius:99px;font-size:.92rem;font-weight:600;opacity:0;transform:translateY(6px);transition:all .3s}
+.syo-badge.on{opacity:1;transform:none}.syo-badge.ok{background:#e9f5ee;color:#1d6b43}.syo-badge.no{background:#fbeeee;color:#9a3030}
+.syo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}@media(max-width:560px){.syo-grid{grid-template-columns:repeat(2,1fr)}}
+.syo-card{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;min-height:104px;padding:1rem .6rem;border:2px solid #ece4d3;border-radius:12px;background:#fff;cursor:pointer;font:inherit;color:var(--ink);transition:transform .15s,border-color .2s,box-shadow .2s,background .2s;text-align:center}
+.syo-card:hover{border-color:var(--gold-2);transform:translateY(-2px);box-shadow:0 10px 24px #0a14301a}
+.syo-card.sel{border-color:var(--gold);background:var(--gold-soft);box-shadow:0 0 0 3px #c3a15c40}
+.syo-card .n{font-family:var(--serif);font-size:1.7rem;line-height:1;color:var(--navy)}
+.syo-card .l{font-size:.8rem;color:var(--muted)}
+.syo-card .ppl{display:flex;gap:2px;color:var(--gold-ink);height:18px}.syo-card .ppl svg{width:14px;height:18px}
+.syo-money{text-align:center;margin:.4rem 0 1.2rem}
+.syo-money .big{display:inline-flex;align-items:baseline;font-family:var(--serif);font-size:clamp(2.4rem,7vw,3.4rem);color:var(--ink);line-height:1}
+.syo-money input{width:6.5ch;border:0;border-bottom:2px dashed #e2d7bf;font:inherit;color:inherit;text-align:center;background:transparent;padding:0}
+.syo-money input:focus{outline:0;border-bottom-color:var(--gold)}
+.syo-range{-webkit-appearance:none;appearance:none;width:100%;height:10px;border-radius:99px;background:linear-gradient(90deg,var(--gold) var(--p,30%),#efe7d6 var(--p,30%));outline:0;margin:.6rem 0 .4rem}
+.syo-range::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid var(--gold);box-shadow:0 4px 12px #0a143033;cursor:grab}
+.syo-range::-moz-range-thumb{width:26px;height:26px;border-radius:50%;background:#fff;border:3px solid var(--gold);box-shadow:0 4px 12px #0a143033;cursor:grab}
+.syo-ticks{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted)}
+.syo-chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.1rem 0 0}
+.syo-chip{border:1px solid #e2d7bf;background:#fff;border-radius:99px;padding:.45rem .9rem;font:inherit;font-size:.85rem;color:var(--navy);cursor:pointer;transition:all .15s}.syo-chip:hover{background:var(--gold-soft);border-color:var(--gold)}
+.syo-list{display:grid;gap:.75rem}
+.syo-opt{display:flex;align-items:center;gap:1rem;padding:1.05rem 1.2rem;border:2px solid #ece4d3;border-radius:12px;background:#fff;cursor:pointer;font:inherit;text-align:left;color:var(--ink);transition:all .2s}
+.syo-opt:hover{border-color:var(--gold-2);transform:translateX(4px)}.syo-opt.sel{border-color:var(--gold);background:var(--gold-soft)}
+.syo-opt .ic{flex:0 0 46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--gold-soft);font-size:1.35rem}
+.syo-opt b{display:block;font-size:1.02rem}.syo-opt span{font-size:.85rem;color:var(--muted)}
+.syo-next{margin-top:1.6rem;width:100%;padding:1.05rem;border:0;border-radius:10px;background:var(--ink);color:#fff;font:inherit;font-weight:600;font-size:1.02rem;letter-spacing:.02em;cursor:pointer;transition:transform .15s,opacity .2s,box-shadow .2s}
+.syo-next:hover{transform:translateY(-1px);box-shadow:0 10px 24px #0a143040}.syo-next:disabled{opacity:.35;cursor:not-allowed;transform:none;box-shadow:none}
+.syo-think{text-align:center;padding:3rem 0}.syo-think .ring{width:56px;height:56px;margin:0 auto 1rem;border-radius:50%;border:4px solid var(--gold-soft);border-top-color:var(--gold);animation:syoSpin .8s linear infinite}@keyframes syoSpin{to{transform:rotate(360deg)}}
+.syo-think p{color:var(--muted);margin:0}
+.syo-res .verdict{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+.syo-res .vic{flex:0 0 64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;animation:syoPop .5s cubic-bezier(.3,1.6,.5,1)}@keyframes syoPop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+.syo-res .tag{display:inline-block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:.3rem .65rem;border-radius:99px;margin-bottom:.35rem}
+.syo-res h2{font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.7rem);line-height:1.2;color:var(--ink);margin:0}
+.t-full .vic,.t-full .tag{background:#e8ebf4;color:var(--navy)}.t-small .vic,.t-small .tag{background:var(--gold-soft);color:var(--gold-ink)}.t-help .vic,.t-help .tag{background:#e9f5ee;color:#1d6b43}.t-low .vic,.t-low .tag{background:#e6f2f7;color:#205d78}.t-nl .vic,.t-nl .tag{background:#fbeeee;color:#9a3030}
+.syo-meter{margin:1.6rem 0 1.4rem;padding:1.2rem 1.2rem 2.6rem;background:var(--ivory);border:1px solid var(--line);border-radius:12px}
+.syo-meter .ttl{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-ink);font-weight:700;margin-bottom:2.4rem}
+.syo-track{position:relative;height:14px;border-radius:99px;display:flex;overflow:visible}
+.syo-track .z{height:100%}.syo-track .z:first-child{border-radius:99px 0 0 99px}.syo-track .z:last-child{border-radius:0 99px 99px 0}
+.syo-track .z1{background:#9fcfe0}.syo-track .z2{background:#8fcaa6}.syo-track .z3{background:var(--gold-2)}.syo-track .z4{background:#b9c0d6}
+.syo-pin{position:absolute;top:-34px;left:0;transform:translateX(-50%);transition:left 1.2s cubic-bezier(.2,.8,.2,1);text-align:center;white-space:nowrap}
+.syo-pin b{display:block;background:var(--ink);color:#fff;font-size:.8rem;padding:.25rem .55rem;border-radius:6px}
+.syo-pin:after{content:"";display:block;width:3px;height:30px;margin:0 auto;background:var(--ink)}
+.syo-cut{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--navy);transform:translateX(-1px)}
+.syo-cut span{position:absolute;top:24px;left:50%;transform:translateX(-50%);font-size:.72rem;color:var(--navy);font-weight:600;white-space:nowrap}
+.syo-legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin-top:2.3rem;font-size:.75rem;color:var(--muted)}.syo-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.35rem;vertical-align:-1px}
+.syo-res p{color:var(--text)}
+.syo-cta{display:grid;grid-template-columns:1.3fr 1fr;gap:.7rem;margin-top:1.3rem}@media(max-width:560px){.syo-cta{grid-template-columns:1fr}}
+.syo-cta .full{grid-column:1/-1}
+.syo-facts{font-size:.82rem;color:var(--muted);margin-top:1rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.syo-facts button{background:none;border:0;color:var(--gold-ink);font:inherit;font-weight:600;cursor:pointer;padding:0;text-decoration:underline}
+.syo-trust{display:flex;justify-content:center;gap:1.4rem;flex-wrap:wrap;margin:1.2rem 0 0;font-size:.82rem;color:var(--muted)}.syo-trust span:before{content:"✓ ";color:var(--gold-ink);font-weight:700}
 </style>
 <form id="syo" novalidate>
-  <div class="row">
-    <div class="field"><label for="syo-zip">ZIP code</label><input id="syo-zip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" placeholder="33323" autocomplete="postal-code"><p class="hint" id="syo-state-hint"></p></div>
-    <div class="field"><label for="syo-size">People in your tax household</label><select id="syo-size"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select><p class="hint">You, your spouse and anyone you claim as a dependent.</p></div>
+  <div class="syo-top"><button type="button" class="syo-back" id="syo-back">&larr; Back</button><span id="syo-count">Question 1 of 4</span></div>
+  <div class="syo-bar"><i id="syo-prog"></i></div>
+
+  <div class="syo-step on" data-step="1">
+    <p class="syo-q">Where do you live?</p>
+    <p class="syo-sub">Your ZIP code tells us your state and whether we can help you there.</p>
+    <div class="syo-zip"><label for="syo-zip" class="sr-only" style="position:absolute;left:-9999px">ZIP code</label><input id="syo-zip" inputmode="numeric" maxlength="5" placeholder="33323" autocomplete="postal-code"></div>
+    <div class="syo-badge" id="syo-badge"></div>
+    <button type="button" class="syo-next" id="syo-n1" disabled>Continue</button>
   </div>
-  <div class="row">
-    <div class="field"><label for="syo-inc">Expected 2027 household income</label><input id="syo-inc" inputmode="numeric" placeholder="e.g. 150000"><p class="hint">Roughly your adjusted gross income (AGI) for the household.</p></div>
-    <div class="field"><label for="syo-health">Is everyone in generally good health?</label><select id="syo-health"><option value="yes">Yes</option><option value="some">Mostly, with some conditions</option><option value="no">No, ongoing health conditions</option></select></div>
+
+  <div class="syo-step" data-step="2">
+    <p class="syo-q">How many people are in your tax household?</p>
+    <p class="syo-sub">You, your spouse and anyone you claim as a dependent.</p>
+    <div class="syo-grid" id="syo-size"></div>
   </div>
-  <button class="btn btn-ink btn-block" type="submit">See My Options</button>
-  <div id="syo-out" aria-live="polite"></div>
+
+  <div class="syo-step" data-step="3">
+    <p class="syo-q">What will your household earn in 2027?</p>
+    <p class="syo-sub">A rough estimate is fine. Use adjusted gross income (AGI) if you know it.</p>
+    <div class="syo-money"><span class="big">$<input id="syo-inc" inputmode="numeric" value="150,000" aria-label="Expected 2027 household income"></span></div>
+    <input type="range" class="syo-range" id="syo-rng" min="20000" max="500000" step="5000" value="150000" aria-label="Income slider">
+    <div class="syo-ticks"><span>$20k</span><span>$250k</span><span>$500k+</span></div>
+    <div class="syo-chips" id="syo-chips"></div>
+    <button type="button" class="syo-next" id="syo-n3">Continue</button>
+  </div>
+
+  <div class="syo-step" data-step="4">
+    <p class="syo-q">How's everyone's health?</p>
+    <p class="syo-sub">This decides whether a private PPO is a realistic option for you.</p>
+    <div class="syo-list" id="syo-health">
+      <button type="button" class="syo-opt" data-v="yes"><span class="ic">💪</span><div><b>Generally healthy</b><span>No major ongoing conditions</span></div></button>
+      <button type="button" class="syo-opt" data-v="some"><span class="ic">🩺</span><div><b>Mostly healthy</b><span>A few minor or well-managed conditions</span></div></button>
+      <button type="button" class="syo-opt" data-v="no"><span class="ic">❤️</span><div><b>Ongoing health conditions</b><span>Regular treatment or specialist care</span></div></button>
+    </div>
+  </div>
+
+  <div class="syo-step" data-step="5"><div class="syo-think"><div class="ring"></div><p id="syo-think-t">Checking 2027 income limits…</p></div></div>
+
+  <div class="syo-step" data-step="6"><div class="syo-res" id="syo-out" aria-live="polite"></div></div>
+
+  <div class="syo-trust" id="syo-trust"><span>30 seconds</span><span>No contact details</span><span>Free, no obligation</span></div>
 </form>
 <p class="small muted" style="margin-top:1rem">This is an educational estimate, not a quote or an eligibility decision. Subsidy eligibility is decided by HealthCare.gov or your state exchange, and the amount depends on your age, location and plan prices. Based on the 2026 federal poverty guidelines used for 2027 coverage in the 48 contiguous states. Sources: <a href="https://www.healthcare.gov/lower-costs/" target="_blank" rel="noopener">HealthCare.gov</a>, <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines" target="_blank" rel="noopener">HHS poverty guidelines</a>, <a href="https://www.healthinsurance.org/obamacare/will-you-receive-an-obamacare-premium-subsidy/" target="_blank" rel="noopener">Healthinsurance.org income limits</a>.</p>
 <h2 class="h2" style="margin-top:2.4rem">Frequently asked questions</h2>
@@ -79,26 +164,72 @@ var LIC={AL:1,AR:1,CO:1,DE:1,FL:1,GA:1,IL:1,IN:1,IA:1,KS:1,KY:1,LA:1,MD:1,MI:1,M
 var NAME={AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",DC:"Washington, DC",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
 var R=[[10,27,"MA"],[28,29,"RI"],[30,38,"NH"],[39,49,"ME"],[50,54,"VT"],[55,55,"MA"],[56,59,"VT"],[60,69,"CT"],[70,89,"NJ"],[100,149,"NY"],[150,196,"PA"],[197,199,"DE"],[200,200,"DC"],[201,201,"VA"],[202,205,"DC"],[206,219,"MD"],[220,246,"VA"],[247,268,"WV"],[270,289,"NC"],[290,299,"SC"],[300,319,"GA"],[320,349,"FL"],[350,369,"AL"],[370,385,"TN"],[386,397,"MS"],[398,399,"GA"],[400,427,"KY"],[430,459,"OH"],[460,479,"IN"],[480,499,"MI"],[500,528,"IA"],[530,549,"WI"],[550,567,"MN"],[570,577,"SD"],[580,588,"ND"],[590,599,"MT"],[600,629,"IL"],[630,658,"MO"],[660,679,"KS"],[680,693,"NE"],[700,714,"LA"],[716,729,"AR"],[730,749,"OK"],[750,799,"TX"],[800,816,"CO"],[820,831,"WY"],[832,838,"ID"],[840,847,"UT"],[850,865,"AZ"],[870,884,"NM"],[885,885,"TX"],[889,898,"NV"],[900,961,"CA"],[967,968,"HI"],[970,979,"OR"],[980,994,"WA"],[995,999,"AK"]];
 function st(z){if(!/^\d{5}$/.test(z))return null;var p=+z.slice(0,3);for(var i=0;i<R.length;i++)if(p>=R[i][0]&&p<=R[i][1])return R[i][2];return null}
-var f=document.getElementById('syo'),out=document.getElementById('syo-out'),zip=document.getElementById('syo-zip'),hint=document.getElementById('syo-state-hint');
+function $(id){return document.getElementById(id)}
 function fmt(n){return '$'+Math.round(n).toLocaleString('en-US')}
-zip.addEventListener('input',function(){var s=st(zip.value);hint.textContent=s?(NAME[s]+(LIC[s]?' ✓ We are licensed here':' — we are not licensed in this state')):''});
-f.addEventListener('submit',function(e){e.preventDefault();
- var s=st(zip.value),n=+document.getElementById('syo-size').value,inc=+(document.getElementById('syo-inc').value||'').replace(/[^0-9.]/g,''),h=document.getElementById('syo-health').value;
- if(!s){out.style.display='block';out.innerHTML='<p>Please enter a valid 5-digit ZIP code.</p>';return}
- if(!inc){out.style.display='block';out.innerHTML='<p>Please enter your expected 2027 household income.</p>';return}
- var fpl=15650+5500*(n-1),pct=inc/fpl*100,cut=fpl*4,html='',tag='',type='Not sure yet';
- if(!LIC[s]){html='<span class="tag">'+NAME[s]+'</span><h2>We are not licensed in '+NAME[s]+' yet.</h2><p>We can only advise clients in our 31 licensed states. For '+NAME[s]+', start at <a href="https://www.healthcare.gov/" target="_blank" rel="noopener">HealthCare.gov</a> or your state exchange.</p>';}
- else{
-  if(pct>400){tag='No government assistance';html='<h2>You would pay full price on the Marketplace.</h2><p>Your income is above the 2027 subsidy cutoff for a household of '+n+' (about '+fmt(cut)+'). That means <strong>no premium tax credit</strong>: every Marketplace premium is full price.</p>';
-   html+= h==='yes'?'<p><strong>Because your household is healthy, a private PPO is worth comparing.</strong> Private, medically underwritten plans price on health rather than income, often with nationwide PPO networks. They ask health questions and can decline applicants.</p>':'<p>With ongoing health conditions, a Marketplace plan may still be the safer choice, because it cannot turn you down. We will compare both honestly.</p>';type=h==='yes'?'Private PPO - full price on Marketplace':'Over subsidy cutoff';}
-  else if(pct>300){tag='Any help would likely be small';html='<h2>You may get a small subsidy, so compare both.</h2><p>You are under the 2027 cutoff (about '+fmt(cut)+' for '+n+'), so you may qualify for some help. At your income it is often modest, especially for younger households, and depends on your ages and local prices.</p>';
-   html+= h==='yes'?'<p>Healthy households in this range often find a private PPO competitive. Compare your after-subsidy Marketplace price with private options before you choose.</p>':'<p>With health conditions, a subsidized Marketplace plan is often the better fit.</p>';type='Compare Marketplace vs private';}
-  else if(pct>=138){tag='You likely qualify for help';html='<h2>You likely qualify for meaningful Marketplace help.</h2><p>Your income is about '+Math.round(pct)+'% of the poverty level for a household of '+n+'. Most people in this range get a premium tax credit, and some also get lower deductibles. A subsidized Marketplace plan is usually the best value.</p>';type='Marketplace with subsidy';}
-  else{tag='Low-cost options';html='<h2>You may qualify for Medicaid or very low-cost coverage.</h2><p>Your income is about '+Math.round(pct)+'% of the poverty level. Depending on your state, you may qualify for Medicaid or a heavily subsidized Marketplace plan. Start at <a href="https://www.healthcare.gov/" target="_blank" rel="noopener">HealthCare.gov</a>.</p>';type='Low income';}
-  html='<span class="tag">'+tag+'</span>'+html+'<div class="cta"><a class="btn btn-ink" href="https://calendar.app.google/EJho68KtW3eEAXxJ9" target="_blank" rel="noopener">Book a free 15-min review</a><a class="btn btn-line" href="../get-a-quote/?type='+encodeURIComponent(type)+'">Get a free comparison</a><a class="btn btn-line" href="tel:+13214426966">Call (321) 442-6966</a></div><p class="facts">Estimate for '+NAME[s]+', household of '+n+', income '+fmt(inc)+' ('+Math.round(pct)+'% of the poverty level).</p>';}
- out.style.display='block';out.innerHTML=html;
- try{window.dataLayer=window.dataLayer||[];dataLayer.push({event:'options_tool_result',result:tag||'not_licensed',state:s});if(window.gtag)gtag('event','options_tool_result',{result:tag||'not_licensed',state:s})}catch(x){}
- out.scrollIntoView({behavior:'smooth',block:'nearest'});});
+function k(n){return n>=1000?'$'+Math.round(n/1000)+'k':fmt(n)}
+var S={state:null,n:0,inc:150000,h:null},cur=1,hist=[];
+var steps=document.querySelectorAll('#syo .syo-step');
+function go(n,back){if(!back&&cur!==n)hist.push(cur);cur=n;steps.forEach(function(s){s.classList.toggle('on',+s.dataset.step===n)});
+ var q=Math.min(n,4);$('syo-prog').style.width=(n>=6?100:q*25)+'%';$('syo-count').textContent=n>=6?'Your result':(n===5?'Almost done':'Question '+q+' of 4');
+ $('syo-back').classList.toggle('on',n>1&&n!==5);$('syo-trust').style.display=n>=5?'none':'flex';
+ var f=steps[n-1].querySelector('input:not([type=range])');if(f&&window.innerWidth>640)setTimeout(function(){f.focus()},250);}
+$('syo-back').addEventListener('click',function(){if(cur===6){go(4,true);hist=[1,2,3];return}var p=hist.pop();if(p)go(p,true)});
+/* step 1 */
+var zip=$('syo-zip'),badge=$('syo-badge');
+zip.addEventListener('input',function(){zip.value=zip.value.replace(/\D/g,'').slice(0,5);var s=st(zip.value);S.state=s;
+ if(s){badge.className='syo-badge on '+(LIC[s]?'ok':'no');badge.textContent=LIC[s]?'✓ '+NAME[s]+' — we’re licensed here':NAME[s]+' — we’re not licensed here yet'}else{badge.className='syo-badge'}
+ $('syo-n1').disabled=!s;});
+zip.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();if(S.state)$('syo-n1').click()}});
+$('syo-n1').addEventListener('click',function(){if(!S.state)return;if(!LIC[S.state]){show();return}go(2)});
+/* step 2 */
+var person='<svg viewBox="0 0 14 18" fill="currentColor"><circle cx="7" cy="4" r="3.3"/><path d="M1 18v-3.5C1 11 3.7 9 7 9s6 2 6 5.5V18z"/></svg>';
+var lbl=['Just me','Couple','Family of 3','Family of 4','Family of 5','Family of 6','Family of 7','Family of 8'],g=$('syo-size');
+for(var i=1;i<=8;i++){var b=document.createElement('button');b.type='button';b.className='syo-card';b.dataset.v=i;
+ b.innerHTML='<span class="ppl">'+new Array(Math.min(i,4)+1).join(person)+(i>4?'<small style="font-size:.7rem;align-self:center">+'+(i-4)+'</small>':'')+'</span><span class="n">'+i+'</span><span class="l">'+lbl[i-1]+'</span>';g.appendChild(b)}
+g.addEventListener('click',function(e){var b=e.target.closest('.syo-card');if(!b)return;g.querySelectorAll('.syo-card').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');S.n=+b.dataset.v;setTimeout(function(){go(3)},280)});
+/* step 3 */
+var inc=$('syo-inc'),rng=$('syo-rng');
+function setInc(v,from){v=Math.max(0,Math.round(v||0));S.inc=v;if(from!=='input')inc.value=v.toLocaleString('en-US');if(from!=='range')rng.value=Math.min(500000,Math.max(20000,v));
+ rng.style.setProperty('--p',((rng.value-20000)/480000*100)+'%');inc.style.width=Math.max(4,inc.value.length+.5)+'ch';$('syo-n3').disabled=!v}
+rng.addEventListener('input',function(){setInc(+rng.value,'range')});
+inc.addEventListener('input',function(){var d=inc.value.replace(/\D/g,'').slice(0,8);inc.value=d?(+d).toLocaleString('en-US'):'';setInc(+d,'input')});
+inc.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();$('syo-n3').click()}});
+[75000,100000,150000,200000,300000].forEach(function(v){var c=document.createElement('button');c.type='button';c.className='syo-chip';c.textContent=k(v);c.onclick=function(){setInc(v)};$('syo-chips').appendChild(c)});
+setInc(150000);
+$('syo-n3').addEventListener('click',function(){if(S.inc)go(4)});
+/* step 4 */
+var hl=$('syo-health');
+hl.addEventListener('click',function(e){var b=e.target.closest('.syo-opt');if(!b)return;hl.querySelectorAll('.syo-opt').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');S.h=b.dataset.v;
+ setTimeout(function(){go(5);var t=$('syo-think-t'),m=['Checking 2027 income limits…','Comparing to the subsidy cutoff…','Matching your options…'],j=0;var iv=setInterval(function(){j++;if(m[j])t.textContent=m[j]},450);setTimeout(function(){clearInterval(iv);show()},1400)},250)});
+/* result */
+function show(){var s=S.state,out=$('syo-out'),html,tag,type='Not sure yet',cls,icon;
+ if(!LIC[s]){cls='t-nl';icon='📍';tag=NAME[s];html='<h2>We’re not licensed in '+NAME[s]+' yet.</h2>';
+  out.className='syo-res '+cls;out.innerHTML='<div class="verdict"><div class="vic">'+icon+'</div><div><span class="tag">'+tag+'</span>'+html+'</div></div><p>We can only advise clients in our 31 licensed states. For '+NAME[s]+', start at <a href="https://www.healthcare.gov/" target="_blank" rel="noopener">HealthCare.gov</a> or your state exchange.</p><div class="syo-facts"><span></span><button type="button" id="syo-again">Try a different ZIP</button></div>';
+  go(6);hist=[1];$('syo-again').onclick=reset;track('not_licensed');return}
+ var n=S.n,v=S.inc,h=S.h,fpl=15650+5500*(n-1),pct=v/fpl*100,cut=fpl*4,body='';
+ if(pct>400){cls='t-full';icon='🏛️';tag='No government assistance';html='<h2>You’d pay full price on the Marketplace.</h2>';
+  body='<p>Your income is <strong>'+fmt(v-cut)+' above</strong> the 2027 subsidy cutoff for a household of '+n+' ('+fmt(cut)+'). That means no premium tax credit: every Marketplace plan is full price.</p>';
+  body+=h==='yes'?'<p><strong>Good news: because your household is healthy, a private PPO is worth comparing.</strong> Private, medically underwritten plans are priced on health rather than income, often with nationwide PPO networks. They ask health questions and can decline applicants.</p>':(h==='some'?'<p>With a few managed conditions, a private PPO may or may not accept you. We’ll check both private and Marketplace options and show you the real numbers.</p>':'<p>With ongoing health conditions, a Marketplace plan may still be the safer choice because it can’t turn you down. We’ll compare both honestly.</p>');
+  type=h==='yes'?'Private PPO - full price on Marketplace':'Over subsidy cutoff';}
+ else if(pct>300){cls='t-small';icon='⚖️';tag='Any help would likely be small';html='<h2>You may get a small subsidy, so compare both.</h2>';
+  body='<p>You’re <strong>'+fmt(cut-v)+' under</strong> the 2027 cutoff for '+n+' ('+fmt(cut)+'), so you may qualify for some help. At your income it’s often modest, especially for younger households, and depends on your ages and local prices.</p>';
+  body+=h==='yes'?'<p>Healthy households in this range often find a private PPO competitive. Compare your after-subsidy Marketplace price with private options before you choose.</p>':'<p>With health conditions, a subsidized Marketplace plan is often the better fit.</p>';type='Compare Marketplace vs private';}
+ else if(pct>=138){cls='t-help';icon='✅';tag='You likely qualify for help';html='<h2>You likely qualify for meaningful Marketplace help.</h2>';
+  body='<p>Your income is about '+Math.round(pct)+'% of the poverty level for a household of '+n+'. Most people in this range get a premium tax credit, and some also get lower deductibles. A subsidized Marketplace plan is usually the best value.</p>';type='Marketplace with subsidy';}
+ else{cls='t-low';icon='🤝';tag='Low-cost options';html='<h2>You may qualify for Medicaid or very low-cost coverage.</h2>';
+  body='<p>Your income is about '+Math.round(pct)+'% of the poverty level. Depending on your state, you may qualify for Medicaid or a heavily subsidized Marketplace plan. Start at <a href="https://www.healthcare.gov/" target="_blank" rel="noopener">HealthCare.gov</a>.</p>';type='Low income';}
+ var max=Math.max(cut*1.6,v*1.12),p=function(x){return Math.min(100,x/max*100)},a=fpl*1.38,b2=fpl*3;
+ var meter='<div class="syo-meter"><div class="ttl">Where you land for 2027</div><div class="syo-track"><div class="z z1" style="width:'+p(a)+'%"></div><div class="z z2" style="width:'+(p(b2)-p(a))+'%"></div><div class="z z3" style="width:'+(p(cut)-p(b2))+'%"></div><div class="z z4" style="flex:1"></div><div class="syo-cut" style="left:'+p(cut)+'%"><span>Cutoff '+k(cut)+'</span></div><div class="syo-pin" id="syo-pin"><b>You: '+k(v)+'</b></div></div><div class="syo-legend"><span><i style="background:#9fcfe0"></i>Low-cost</span><span><i style="background:#8fcaa6"></i>Subsidy likely</span><span><i style="background:var(--gold-2)"></i>Small subsidy</span><span><i style="background:#b9c0d6"></i>Full price</span></div></div>';
+ var cta='<div class="syo-cta"><a class="btn btn-ink" href="https://calendar.app.google/EJho68KtW3eEAXxJ9" target="_blank" rel="noopener">Book a free 15-min review</a><a class="btn btn-line" href="../get-a-quote/?type='+encodeURIComponent(type)+'">Get a free comparison</a><a class="btn btn-line full" href="tel:+13214426966">Call (321) 442-6966</a></div>';
+ out.className='syo-res '+cls;
+ out.innerHTML='<div class="verdict"><div class="vic">'+icon+'</div><div><span class="tag">'+tag+'</span>'+html+'</div></div>'+meter+body+cta+'<div class="syo-facts"><span>'+NAME[s]+' · household of '+n+' · '+fmt(v)+' · '+Math.round(pct)+'% of poverty level</span><button type="button" id="syo-again">Start over</button></div>';
+ go(6);$('syo-again').onclick=reset;
+ var pin=$('syo-pin');setTimeout(function(){pin.style.left=p(v)+'%'},120);
+ track(tag);
+ if(window.innerWidth<=640)$('syo').scrollIntoView({behavior:'smooth',block:'start'});}
+function track(r){try{window.dataLayer=window.dataLayer||[];dataLayer.push({event:'options_tool_result',result:r,state:S.state});if(window.gtag)gtag('event','options_tool_result',{result:r,state:S.state})}catch(x){}}
+function reset(){hist=[];S.n=0;S.h=null;document.querySelectorAll('#syo .sel').forEach(function(x){x.classList.remove('sel')});go(1,true)}
+document.getElementById('syo').addEventListener('submit',function(e){e.preventDefault()});
 })();</script>
 </main>
 <footer class="site-footer">
