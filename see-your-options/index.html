@@ -77,7 +77,7 @@
 .syo-q{font-family:var(--serif);font-size:clamp(1.35rem,3.2vw,1.85rem);line-height:1.2;color:var(--ink);margin:0 0 .4rem}
 .syo-sub{color:var(--muted);margin:0 0 1.4rem;font-size:.97rem}
 .syo-zip{display:flex;gap:.8rem;align-items:stretch;flex-wrap:wrap}
-.syo-zip input{flex:1 1 220px;font-size:2rem!important;letter-spacing:.35em;text-align:center;padding:.7rem 1rem;border:2px solid #e2d7bf;border-radius:12px;font-family:var(--sans);color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.syo-zip input{flex:1 1 auto;width:100%;min-width:0;font-size:2rem!important;letter-spacing:.35em;text-align:center;padding:.7rem 1rem;border:2px solid #e2d7bf;border-radius:12px;font-family:var(--sans);color:var(--ink);transition:border-color .2s,box-shadow .2s}
 .syo-zip input:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px #c3a15c33}
 .syo-badge{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;padding:.55rem .9rem;border-radius:99px;font-size:.92rem;font-weight:600;opacity:0;transform:translateY(6px);transition:all .3s}
 .syo-badge.on{opacity:1;transform:none}.syo-badge.ok{background:#e9f5ee;color:#1d6b43}.syo-badge.no{background:#fbeeee;color:#9a3030}
@@ -90,7 +90,7 @@
 .syo-card .ppl{display:flex;gap:2px;color:var(--gold-ink);height:18px}.syo-card .ppl svg{width:14px;height:18px}
 .syo-money{text-align:center;margin:.4rem 0 1.2rem}
 .syo-money .big{display:inline-flex;align-items:baseline;font-family:var(--serif);font-size:clamp(2.4rem,7vw,3.4rem);color:var(--ink);line-height:1}
-.syo-money input{width:6.5ch;border:0;border-bottom:2px dashed #e2d7bf;font:inherit;color:inherit;text-align:center;background:transparent;padding:0}
+.syo-money input{width:6.5ch;max-width:100%;min-width:0;font-size:inherit!important;border:0;border-bottom:2px dashed #e2d7bf;font:inherit;color:inherit;text-align:center;background:transparent;padding:0}
 .syo-money input:focus{outline:0;border-bottom-color:var(--gold)}
 .syo-range{-webkit-appearance:none;appearance:none;width:100%;height:10px;border-radius:99px;background:linear-gradient(90deg,var(--gold) var(--p,30%),#efe7d6 var(--p,30%));outline:0;margin:.6rem 0 .4rem}
 .syo-range::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid var(--gold);box-shadow:0 4px 12px #0a143033;cursor:grab}
