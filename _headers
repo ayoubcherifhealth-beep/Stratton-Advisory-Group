@@ -20,3 +20,6 @@
 # Keep the workers.dev copy of the site out of search results; strattonadvisorygroup.com is the only public host.
 https://stratton-advisory-group.ayoubcherifhealth.workers.dev/*
   X-Robots-Tag: noindex
+
+https://seo-expansion-2026-11-stratton-advisory-group.ayoubcherifhealth.workers.dev/*
+  X-Robots-Tag: noindex
