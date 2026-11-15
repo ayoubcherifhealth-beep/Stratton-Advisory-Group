@@ -35,3 +35,7 @@ Also: nav now Coverage / Who We Help (families, self-employed & 1099, small busi
 ## Batch 8 — 30 state COBRA pages /cobra-alternatives-{state}/ (cobrastates.py)
 State continuation data: Mercer "Beyond COBRA" Nov 12 2024 Appendix A (statute cites). No mini-COBRA: AL, IN, MI, MT, NV. No state election deadlines stated (they vary). Hash salts in OVR. Median 5-gram overlap 0.24, max 0.44.
 Linked from cobra-alternatives/ ("COBRA alternatives by state"), each state page cobra-note, sitemap (227), llms.txt.
+
+## Batch 9 — brand + 31-state hubs (batch9.py)
+about-stratton-advisory-group/, private-ppo-health-insurance/, self-employed-health-insurance/, health-insurance-for-high-earners/, overpaying-for-health-insurance-through-work/, health-insurance-for-people-who-travel/, state-continuation-coverage-laws/ (31-state mini-COBRA chart; FL row from Mercer: 18 mo/29 disability, 115%/150%, § 627.6692).
+Coverage menu: Private PPO (31 states) first, Overpaying Through Work; Who We Help self-employed -> national hub; footer "All 31 states:" line on every page; state pages "More guides" line. Sitemap 234. User: focus only on the 31 licensed states.
