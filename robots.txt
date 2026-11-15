@@ -77,3 +77,4 @@ User-agent: Slurp
 Allow: /
 
 Sitemap: https://strattonadvisorygroup.com/sitemap.xml
+Sitemap: https://strattonadvisorygroup.com/feed.xml
