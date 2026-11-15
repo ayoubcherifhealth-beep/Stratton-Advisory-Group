@@ -46,3 +46,5 @@ early-retirement-health-insurance/ (bridge to 65), health-insurance-between-jobs
 ## Wave 1 (Nov 15, preview) — 40 more profession × state guides (wave1.py; per-combo salts recorded in session); total state guides 79; sitemap 283
 Attorneys NV OH TX NC TN CO MD MO · Nurses IL OH MI MO KY LA AL SC · Physicians IL MI GA MO CO KY · Realtors GA CO NC UT OH · Advisors GA CO TX OH MO · Founders GA IL TN NV · Truck GA KY OK AL.
 Live: 243-page expansion deployed Nov 15 + yacht relevance fixes + FL city gap notes. National profession pages (batch11) now persist yacht coastal list.
+
+## Full campaign built (Nov 15, preview): all 224 relevant profession × state guides (39 + 40 wave1 + 145 fullwave.py); sitemap 428. integrate.py wires state grids, FL profession by-state lines, Guides page, sitemap, llms. Ayoub chose to publish everything on Nov 17 (scheduled reminder in session).
