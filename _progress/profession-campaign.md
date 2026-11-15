@@ -25,3 +25,9 @@ Remaining ideas: more profession articles (2nd per profession), state-specific p
 /blog/health-insurance-for-{profession}-in-{city}/ via cityprof.py. Combos: truck drivers (Jacksonville, Tampa, Orlando, Miami, Fort Lauderdale, Tallahassee); travel nurses (Miami, Tampa, Orlando, Jacksonville, Fort Lauderdale, Naples); physicians & dentists (Miami, Tampa, Orlando, Jacksonville, Boca Raton); attorneys (Tallahassee, Miami, West Palm Beach, Tampa, Fort Lauderdale); realtors (Naples, Palm Beach, Boca Raton, 30A/Destin, Sarasota); financial advisors (Boca Raton, West Palm Beach, Palm Beach Gardens, Naples, Tampa); founders & remote workers (Miami, Tampa, Orlando, Lakewood Ranch); yacht captains (Miami, Jupiter, Palm Beach, Naples, 30A/Destin).
 Linked from city pages ("Local guides" line) and profession pages ("By city" line); sitemap 158; llms.txt. Same-profession 5-gram overlap median 0.21.
 Next if Search Console shows traction (6-8 wks): add more combos where pages rank.
+
+## Batch 7 — built: 39 profession x state articles (stateprof.py, reuses cityprof)
+Truck: TX IN TN AR NE MO OH WI · Nurses: TX TN NC GA CO · Physicians: TN TX MD NC OH · Attorneys: DE VA IL GA · Founders: UT CO TX MT NC · Yacht: MD SC LA VA · Advisors: IL IA NC SD · Realtors: TX NV SC TN.
+State pages got a "Who we help in [State]" box; profession pages got "In other states" line; Guides page "By profession & state" section; sitemap 197.
+Uniqueness tuning: per-page hash salts chosen to cut max overlap (Y-virginia 'h', N-texas 'c', R-naples 'd', T-missouri 'd', W-orlando 'i') — if rebuilding these five, set cityprof.OVR[city]=salt for that build only.
+Also: nav now Coverage / Who We Help (families, self-employed & 1099, small business, individuals first, then 8 professions) / Locations (31 states; Florida -> service-areas) ; city pages have prof-grid; Guides page grouped with jump links.
