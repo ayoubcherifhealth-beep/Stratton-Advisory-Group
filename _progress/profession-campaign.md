@@ -31,3 +31,7 @@ Truck: TX IN TN AR NE MO OH WI · Nurses: TX TN NC GA CO · Physicians: TN TX MD
 State pages got a "Who we help in [State]" box; profession pages got "In other states" line; Guides page "By profession & state" section; sitemap 197.
 Uniqueness tuning: per-page hash salts chosen to cut max overlap (Y-virginia 'h', N-texas 'c', R-naples 'd', T-missouri 'd', W-orlando 'i') — if rebuilding these five, set cityprof.OVR[city]=salt for that build only.
 Also: nav now Coverage / Who We Help (families, self-employed & 1099, small business, individuals first, then 8 professions) / Locations (31 states; Florida -> service-areas) ; city pages have prof-grid; Guides page grouped with jump links.
+
+## Batch 8 — 30 state COBRA pages /cobra-alternatives-{state}/ (cobrastates.py)
+State continuation data: Mercer "Beyond COBRA" Nov 12 2024 Appendix A (statute cites). No mini-COBRA: AL, IN, MI, MT, NV. No state election deadlines stated (they vary). Hash salts in OVR. Median 5-gram overlap 0.24, max 0.44.
+Linked from cobra-alternatives/ ("COBRA alternatives by state"), each state page cobra-note, sitemap (227), llms.txt.
