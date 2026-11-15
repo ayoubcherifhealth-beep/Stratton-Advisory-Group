@@ -3,7 +3,9 @@ Brief: /mnt/user-data/uploads/80b11afe-attachment.txt (Nov 15, 2026). Builder: /
 Messaging (owner's direction): lead with private PPO; national PPO network travels with you across the U.S.; self-employed premiums usually deductible (Form 7206); ACA usually not the best route for healthy, higher-earning professionals (400% FPL cliff, regional HMO/EPO networks, full APTC repayment from TY2026, enrollment windows). Keep one honest caveat (underwriting, pre-existing, Marketplace for serious conditions). Do NOT discuss Medicaid, Medicare, disability or supplemental plans. COBRA only as the expensive option. No invented stats/prices.
 Rollout: batches on preview branch seo-expansion-2026-11; owner says "deploy" per batch.
 
-## Batch 1 — built (awaiting deploy)
+## STATUS (Nov 15): ALL BATCHES BUILT ON PREVIEW — owner reviewing everything at once, awaiting "deploy"
+
+## Batch 1 — built
 - NEW landing: /health-insurance-for-truck-drivers-florida/
 - NEW landing: /health-insurance-for-travel-nurses-florida/
 - NEW blog: /blog/owner-operator-health-insurance-guide/
@@ -11,9 +13,10 @@ Rollout: batches on preview branch seo-expansion-2026-11; owner says "deploy" pe
 - Sitewide footer "Professions" line: + Truck drivers, Travel nurses (82 files)
 - blog/index.html cards + renumber; sitemap +4; llms.txt +4
 
-## Batch 2 — planned: one supporting article per existing profession page
-physicians/dentists (leaving hospital employment to open a practice), attorneys (leaving a firm to go solo), realtors (first-year agents), advisors (breakaway advisors leaving a wirehouse), founders (before/after first hire: individual -> ICHRA/small group), yacht (international vs U.S. plans for captains/crew)
-
-## Batch 3 — planned: profession section on every Florida city page (26)
-## Batch 4 — planned: weave professions into existing blogs/service pages + links
-## Batch 5+ — planned: 30 state pages (~5 per batch), biggest markets first; verify each state's marketplace + OE dates
+## Batch 2 — built
+NEW blogs: health-insurance-for-dentists-who-own-a-practice, health-insurance-for-solo-attorneys, health-insurance-for-top-producing-realtors, health-insurance-for-consultants-who-travel, startup-founder-health-insurance, health-insurance-for-yacht-crew-fort-lauderdale (each linked from its profession page body)
+## Batch 3 — built: profession section on all 26 Florida city pages (cities.py; unique intro + local spotlights + rotating rest/close; max pairwise similarity 0.54)
+## Batch 4 — built: professions woven into 13 existing guides/coverage pages (weave.py)
+## Batch 5 — built: 30 state pages /health-insurance-{state}/ (states.py + states_extra.py): state marketplace (CO GA IL KY MD NV VA run their own; AR OK SBM-FP on HealthCare.gov; rest HealthCare.gov), metros, hospital systems, economy, 3 situations, neighbor-state links; service-areas #states links; sitemap 117 URLs; llms.txt
+Fixes along the way: Naples + ACA page FAQ schema text mismatch.
+Remaining ideas: more profession articles (2nd per profession), state-specific profession pages (e.g., truck drivers Texas), review real Google reviews into site once collected.
