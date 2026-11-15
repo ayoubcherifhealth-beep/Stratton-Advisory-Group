@@ -39,3 +39,6 @@ Linked from cobra-alternatives/ ("COBRA alternatives by state"), each state page
 ## Batch 9 — brand + 31-state hubs (batch9.py)
 about-stratton-advisory-group/, private-ppo-health-insurance/, self-employed-health-insurance/, health-insurance-for-high-earners/, overpaying-for-health-insurance-through-work/, health-insurance-for-people-who-travel/, state-continuation-coverage-laws/ (31-state mini-COBRA chart; FL row from Mercer: 18 mo/29 disability, 115%/150%, § 627.6692).
 Coverage menu: Private PPO (31 states) first, Overpaying Through Work; Who We Help self-employed -> national hub; footer "All 31 states:" line on every page; state pages "More guides" line. Sitemap 234. User: focus only on the 31 licensed states.
+
+## Batch 10 — gap coverage (batch10.py) + 18–64 audience
+early-retirement-health-insurance/ (bridge to 65), health-insurance-between-jobs/ (31 states). gap-note paragraph on 30 state pages (3 variants) and 103 profession pages/guides (4 variants, before Sources); state COBRA pages link both; Who We Help menu + footer "All 31 states" line; sitemap 235. Audience: adults 18–64 + families (About FAQ, hubs, llms.txt).
