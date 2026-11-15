@@ -42,3 +42,7 @@ Coverage menu: Private PPO (31 states) first, Overpaying Through Work; Who We He
 
 ## Batch 10 — gap coverage (batch10.py) + 18–64 audience
 early-retirement-health-insurance/ (bridge to 65), health-insurance-between-jobs/ (31 states). gap-note paragraph on 30 state pages (3 variants) and 103 profession pages/guides (4 variants, before Sources); state COBRA pages link both; Who We Help menu + footer "All 31 states" line; sitemap 235. Audience: adults 18–64 + families (About FAQ, hubs, llms.txt).
+
+## Wave 1 (Nov 15, preview) — 40 more profession × state guides (wave1.py; per-combo salts recorded in session); total state guides 79; sitemap 283
+Attorneys NV OH TX NC TN CO MD MO · Nurses IL OH MI MO KY LA AL SC · Physicians IL MI GA MO CO KY · Realtors GA CO NC UT OH · Advisors GA CO TX OH MO · Founders GA IL TN NV · Truck GA KY OK AL.
+Live: 243-page expansion deployed Nov 15 + yacht relevance fixes + FL city gap notes. National profession pages (batch11) now persist yacht coastal list.
