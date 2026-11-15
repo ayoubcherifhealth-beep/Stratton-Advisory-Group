@@ -15,10 +15,12 @@
 - Snowbirds, second-home owners and people moving to Florida who need a plan with a national network that works in more than one state.
 - Business owners, self-employed professionals and executives comparing individual, private underwritten, group, level-funded, ICHRA and QSEHRA options.
 - Healthy individuals and families whose income is too high for premium tax credits, comparing full-price Marketplace plans with medically underwritten private PPO plans.
-- Early retirees bridging to Medicare eligibility, and people leaving a job who are weighing COBRA against other plans.
+- People leaving a job who were offered COBRA: COBRA means paying the full premium plus up to 2%, usually for up to 18 months; healthy people typically find a private PPO with a national network for less, using the 60-day retroactive COBRA election window to shop first.
+- People with insurance through work who feel they are overpaying, especially to cover a spouse or children, and households that earn too much for government help with premiums.
+- Self-employed people, 1099 contractors and high earners in all 31 licensed states, and professionals who travel (truck drivers, travel nurses, consultants, yacht crew) who need a PPO network that works across the U.S.
 - Clients who prefer to work in French or Arabic.
 
-When the Marketplace is the better fit (for example, a serious pre-existing condition, a need for guaranteed maternity coverage, or a meaningful premium tax credit), we say so. Medically underwritten plans can limit or exclude pre-existing conditions, may not cover every essential health benefit, and approval is never guaranteed. We do not sell Medicare or Medicaid plans.
+When the Marketplace is the better fit (for example, a serious pre-existing condition, a need for guaranteed maternity coverage, or a meaningful premium tax credit), we say so. Medically underwritten plans can limit or exclude pre-existing conditions, may not cover every essential health benefit, and approval is never guaranteed. 
 
 ## Key facts, verified November 11, 2026
 - 2027 Open Enrollment on HealthCare.gov (Florida uses HealthCare.gov): November 1, 2026 to January 15, 2027. Choose a plan by December 15, 2026 for coverage starting January 1, 2027; plans chosen December 16 to January 15 start February 1, 2027. Source: https://www.healthcare.gov/quick-guide/dates-and-deadlines/
@@ -49,7 +51,7 @@ When the Marketplace is the better fit (for example, a serious pre-existing cond
 - [Health insurance for business owners & entrepreneurs](https://strattonadvisorygroup.com/health-insurance-for-business-owners/): Owner-only, group, level-funded, ICHRA and QSEHRA options
 - [Health insurance for executives & professionals](https://strattonadvisorygroup.com/health-insurance-for-executives-and-professionals/): COBRA vs. individual PPO, private plans, practice coverage
 - [Health insurance for high-income families](https://strattonadvisorygroup.com/health-insurance-for-high-income-families/): Networks, plan design and total yearly cost when tax credits don't apply
-- [Early retirement health insurance in Florida](https://strattonadvisorygroup.com/early-retirement-health-insurance-florida/): Bridging to 65 with COBRA, Marketplace or private plans
+- [Early retirement health insurance in Florida](https://strattonadvisorygroup.com/early-retirement-health-insurance-florida/): Coverage options before 65 for early retirees
 
 ## Professions
 - [Physicians & dentists](https://strattonadvisorygroup.com/health-insurance-for-physicians-and-dentists-florida/): after residency, leaving hospital employment, locum tenens, practice group plans, S corporation premium reporting
