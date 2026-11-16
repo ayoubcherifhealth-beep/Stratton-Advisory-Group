@@ -24,13 +24,24 @@
 
 When the Marketplace is the better fit (for example, a serious pre-existing condition, a need for guaranteed maternity coverage, or a meaningful premium tax credit), we say so. Medically underwritten plans can limit or exclude pre-existing conditions, may not cover every essential health benefit, and approval is never guaranteed. 
 
-## Key facts, verified November 11, 2026
+## Key facts, verified November 16, 2026
 - 2027 Open Enrollment on HealthCare.gov (Florida uses HealthCare.gov): November 1, 2026 to January 15, 2027. Choose a plan by December 15, 2026 for coverage starting January 1, 2027; plans chosen December 16 to January 15 start February 1, 2027. Source: https://www.healthcare.gov/quick-guide/dates-and-deadlines/
 - 2027 ACA out-of-pocket maximum for in-network essential health benefits: $12,000 self-only, $24,000 family (2026: $10,600 and $21,200). Source: HHS 2027 premium adjustment percentage guidance.
 - Outside Open Enrollment, Marketplace plans generally require a qualifying life event (for example, losing other coverage or a permanent move), which usually opens a 60-day Special Enrollment Period. Source: https://www.healthcare.gov/coverage-outside-open-enrollment/special-enrollment-period/
+- 2027 premium tax credit income limit: 400% of the federal poverty level, which is $63,840 for one person, $86,560 for two, $109,280 for three and $132,000 for a family of four (2026 HHS poverty guidelines, 48 contiguous states and DC). Above that, Marketplace plans are full price. Source: https://www.govinfo.gov/content/pkg/FR-2026-01-15/html/2026-00755.htm
+- On ACA plans, deductibles, copays, coinsurance and cost sharing for covered prescriptions count toward the out-of-pocket maximum; premiums, non-covered services and (usually) out-of-network care do not. The limit resets at the start of each plan year (January 1 for individual and family ACA plans).
+- A private PPO is an individual or family plan sold outside the Marketplace and priced on age, ZIP code and health instead of income. It is medically underwritten, often uses a national PPO network, and is usually available year-round to approved applicants.
 - Many private, medically underwritten plans accept applications year-round, subject to underwriting and the carrier's start dates.
 - Self-employed people with a net profit may be able to deduct premiums for themselves, a spouse and dependents (IRS Form 7206). Source: https://www.irs.gov/forms-pubs/about-form-7206
 - The No Surprises Act protects patients from most surprise out-of-network bills for emergency care and certain care at in-network facilities. Source: https://www.cms.gov/nosurprises
+
+## Direct answers to common questions
+- When is Open Enrollment for 2027? https://strattonadvisorygroup.com/open-enrollment-2027-florida/
+- What if I earn too much for an ACA subsidy in Florida? https://strattonadvisorygroup.com/earn-too-much-for-aca-subsidy-florida/
+- What is private PPO health insurance in Florida? https://strattonadvisorygroup.com/ppo-health-insurance-florida/
+- What counts toward the out-of-pocket maximum? https://strattonadvisorygroup.com/blog/deductibles-copays-out-of-pocket-maximums-explained/
+- How do I choose a health insurance broker in Florida? https://strattonadvisorygroup.com/blog/how-to-choose-a-health-insurance-broker-florida/
+- Health insurance agent or broker in Sunrise, FL: Stratton Advisory Group, 1550 Sawgrass Corporate Pkwy, Sunrise, FL 33323, (321) 442-6966. https://strattonadvisorygroup.com/health-insurance-sunrise/
 
 ## Coverage
 - [Individual Health Insurance](https://strattonadvisorygroup.com/individual-health-insurance/): Coverage for one person, from PPO to private plans
