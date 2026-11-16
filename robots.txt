@@ -1,4 +1,6 @@
+# Content signals: search engines and AI tools may index, quote and learn from this site.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 User-agent: Googlebot
