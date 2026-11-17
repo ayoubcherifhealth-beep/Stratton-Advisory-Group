@@ -20,32 +20,6 @@
     var onS=function(){bar.classList.toggle('show',scrollY>420);};addEventListener('scroll',onS,{passive:true});onS();
   }
 
-  var per=document.querySelector('.persona');
-  if(per&&!per.dataset.auto&&!(window.matchMedia('(prefers-reduced-motion: reduce)').matches)){
-    per.dataset.auto='1';
-    var cards=[].slice.call(per.children);
-    cards.forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');k.setAttribute('tabindex','-1');k.classList.add('clone');k.classList.remove('reveal','d1','d2','d3');k.classList.add('in');k.style.opacity='1';k.style.transform='none';per.appendChild(k);});
-    per.classList.add('auto');
-    var paused=false,timer=null,pos=-1,last=0,speed=0.04;
-    function setW(){return cards[cards.length-1].offsetLeft+cards[cards.length-1].offsetWidth-cards[0].offsetLeft+parseFloat(getComputedStyle(per).columnGap||14);}
-    var loopW=0;
-    function step(t){
-      if(!last)last=t; var dt=Math.min(t-last,50); last=t;
-      if(!loopW)loopW=setW();
-      if(!paused&&per.getBoundingClientRect().bottom>0&&per.getBoundingClientRect().top<innerHeight){
-        if(pos<0)pos=per.scrollLeft; pos+=speed*dt; if(pos>=loopW)pos-=loopW; per.scrollLeft=Math.round(pos);
-      }
-      requestAnimationFrame(step);
-    }
-    function hold(){paused=true;clearTimeout(timer);pos=-1;}
-    function release(){clearTimeout(timer);timer=setTimeout(function(){if(per.scrollLeft>=loopW)per.scrollLeft-=loopW;pos=-1;paused=false;},2500);}
-    per.addEventListener('touchstart',hold,{passive:true});
-    per.addEventListener('touchend',release,{passive:true});
-    per.addEventListener('pointerdown',hold);
-    per.addEventListener('pointerup',release);
-    addEventListener('resize',function(){loopW=0;});
-    requestAnimationFrame(step);
-  }
 
   if(document.getElementById('qualify')){document.body.classList.add('home-m');}
 })();
