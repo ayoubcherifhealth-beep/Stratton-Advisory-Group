@@ -128,7 +128,6 @@ section[aria-labelledby="uw-h"] p:nth-of-type(2){display:none}
 
 /* Mobile v4: minimal and modern */
 .announce{display:none!important}
-.sec .eyebrow{display:none!important}
 .h2,.sec-head .h2{font-size:1.5rem!important;line-height:1.2!important;letter-spacing:0!important}
 .sec-head{margin-bottom:1.4rem!important}
 .sec-head p{font-size:.95rem}
@@ -147,3 +146,35 @@ body{-webkit-font-smoothing:antialiased}
 .persona .k{display:none!important}
 .advisor{gap:1.2rem!important}
 .advisor .portrait{max-width:180px!important;margin:0 auto .4rem!important}
+
+/* Mobile v5: modern card layout (inspired by competitor review) */
+.fab-call,.fab-sms{display:none!important}
+.m-bar{position:fixed;left:0;right:0;bottom:0;z-index:99;display:grid;grid-template-columns:1fr 1fr 1.6fr;gap:.5rem;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid #e7e2d6;box-shadow:0 -6px 20px rgba(10,20,48,.08)}
+.m-bar a{display:flex;align-items:center;justify-content:center;gap:.4rem;height:46px;border-radius:12px;font:600 .92rem/1 var(--sans);text-decoration:none}
+.m-bar svg{width:18px;height:18px}
+.m-bar .m-call,.m-bar .m-text{border:1px solid #d9cfba;color:var(--ink);background:#fff}
+.m-bar .m-quote{background:var(--gold);color:var(--ink)}
+body.has-mbar{padding-bottom:76px}
+
+/* Situation cards: white cards with photo on top, swipe sideways */
+section .persona{display:flex!important;overflow-x:auto!important;scroll-snap-type:x mandatory;gap:.85rem!important;margin:0 -1.25rem!important;padding:.2rem 1.25rem 1rem!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+section .persona::-webkit-scrollbar{display:none}
+section .persona a,section .persona a.wide{flex:0 0 78%!important;scroll-snap-align:center;min-height:0!important;padding:0!important;background:#fff!important;color:var(--ink)!important;border:1px solid #ebe5d8!important;border-radius:16px!important;box-shadow:0 8px 24px rgba(10,20,48,.08)!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important;overflow:hidden;isolation:auto!important}
+section .persona a:before,section .persona a.wide:before{display:none!important}
+section .persona a img.pbg,section .persona a.wide img.pbg{position:static!important;width:100%!important;height:auto!important;aspect-ratio:16/10;object-fit:cover;z-index:auto!important;inset:auto!important;transform:none!important}
+section .persona a .k{display:block!important;color:var(--gold-ink,#8a6a2c)!important;font-size:.62rem!important;letter-spacing:.14em!important;padding:1rem 1.1rem 0;text-shadow:none!important}
+section .persona a b,section .persona a.wide b{color:var(--ink)!important;text-shadow:none!important;font-family:var(--sans)!important;font-variant:normal!important;text-transform:none!important;letter-spacing:0!important;font-size:1.05rem!important;font-weight:650!important;line-height:1.35!important;margin:.45rem 1.1rem .8rem!important;max-width:none!important}
+section .persona a .go{color:var(--navy-2)!important;font-size:.88rem!important;margin:auto 1.1rem 1.1rem!important;font-weight:600}
+section .persona a.wide p{display:none!important}
+section[aria-labelledby="who-h"] .sec-head::after{content:"Swipe to see all \2192";display:block;font-size:.8rem;color:#7a7f8c;margin-top:.4rem}
+
+/* Guides: swipe cards with descriptions */
+section .guide-home{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:.85rem;margin:0 -1.25rem!important;padding:.2rem 1.25rem 1rem!important;background:none!important;border:0!important;box-shadow:none!important;scrollbar-width:none}
+section .guide-home::-webkit-scrollbar{display:none}
+section .guide-home li,section .guide-home li:nth-child(n+4){display:block!important;flex:0 0 78%;scroll-snap-align:center;background:#fff;border:1px solid #ebe5d8!important;border-radius:16px;box-shadow:0 8px 24px rgba(10,20,48,.06)}
+section .guide-home li a{display:flex!important;flex-direction:column;align-items:flex-start;gap:.5rem!important;padding:1.2rem 1.1rem!important;height:100%;border:0!important}
+section .guide-home .n{font-size:.8rem!important;color:var(--gold)}
+section .guide-home .k{display:block!important;font-size:.62rem;letter-spacing:.14em}
+section .guide-home h3{font-family:var(--sans)!important;text-transform:none!important;font-variant:normal!important;letter-spacing:0!important;font-size:1.02rem!important;font-weight:650;line-height:1.35}
+section .guide-home .gtxt p{display:block!important;font-size:.88rem;line-height:1.55;color:#5b6170;margin:.4rem 0 0}
+section .guide-home .go{display:block!important;margin-top:auto;font-size:.88rem;font-weight:600;color:var(--navy-2)}
