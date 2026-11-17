@@ -56,7 +56,6 @@ section[aria-labelledby="map-h"] .state-list{display:none!important}
 .f-legal{font-size:.7rem;padding:1.4rem 0 6rem}
 
 /* One floating button instead of two */
-.fab-sms{display:none!important}
 
 /* Comparison tables: fit the screen instead of side-scrolling */
 .table-wrap{overflow:visible!important}
@@ -98,3 +97,31 @@ section[aria-labelledby="ver-h"]{display:none}      /* Credibility cards: licens
 .trust li span{font-size:.62rem!important;line-height:1.3;display:block}
 .trust .wrap ul li{border-left:0!important;border-right:0!important}
 .trust .wrap ul li:not(:nth-child(4)){border-right:1px solid var(--line)!important}
+
+/* Mobile v3: less scrolling on the homepage */
+.persona{grid-template-columns:1fr 1fr!important;gap:.6rem!important}
+.persona a,.persona a.wide{min-height:165px!important;padding:.85rem .8rem!important}
+.persona a.wide{grid-column:1/-1!important;min-height:140px!important}
+.persona .k{font-size:.56rem!important;letter-spacing:.1em!important;line-height:1.35}
+.persona a b,.persona a.wide b{font-size:.84rem!important;line-height:1.3!important;margin:.35rem 0 .45rem!important}
+.persona .go{font-size:.72rem!important}
+section[aria-labelledby="ind-h"]{display:none}
+.advisor .portrait{max-width:220px;margin:0 auto 1rem}
+.advisor .portrait .tag{display:none}
+.advisor .attrs{display:none}
+section[aria-labelledby="adv-h"] h2{margin:.6rem 0 .9rem!important}
+.steps{display:grid!important;grid-template-columns:1fr 1fr!important;gap:1.2rem 1rem!important}
+.steps .step p{display:none}
+.steps .step h3{font-size:1rem!important;margin:.3rem 0 0!important}
+section[aria-labelledby="proc-h"] .sec-head p{display:none}
+section[aria-labelledby="uw-h"] .table-wrap{display:none}
+section[aria-labelledby="uw-h"] p:nth-of-type(2){display:none}
+.guide-home li:nth-child(n+4){display:none}
+.guide-home .gtxt p{display:none}
+#faq details:nth-child(n+7){display:none}
+#contact .lead{display:none}
+.sec{padding-top:2.6rem!important;padding-bottom:2.6rem!important}
+.guide-home li a{padding:.9rem 0!important;gap:.8rem!important}
+.guide-home .go,.guide-home .k{display:none!important}
+.guide-home h3{font-size:1rem!important;margin:0!important}
+.f-legal p{font-size:.66rem!important;line-height:1.5!important}
