@@ -149,13 +149,6 @@ body{-webkit-font-smoothing:antialiased}
 .advisor .portrait{max-width:180px!important;margin:0 auto .4rem!important}
 
 /* Mobile v5: modern card layout (inspired by competitor review) */
-.fab-call,.fab-sms{display:none!important}
-.m-bar{position:fixed;left:0;right:0;bottom:0;z-index:99;display:grid;grid-template-columns:1fr 1fr 1.6fr;gap:.5rem;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid #e7e2d6;box-shadow:0 -6px 20px rgba(10,20,48,.08)}
-.m-bar a{display:flex;align-items:center;justify-content:center;gap:.4rem;height:46px;border-radius:12px;font:600 .92rem/1 var(--sans);text-decoration:none}
-.m-bar svg{width:18px;height:18px}
-.m-bar .m-call,.m-bar .m-text{border:1px solid #d9cfba;color:var(--ink);background:#fff}
-.m-bar .m-quote{background:var(--gold);color:var(--ink)}
-body.has-mbar{padding-bottom:76px}
 
 /* Situation cards: white cards with photo on top, swipe sideways */
 section .persona{display:flex!important;overflow-x:auto!important;scroll-snap-type:x mandatory;gap:.85rem!important;margin:0 -1.25rem!important;padding:.2rem 1.25rem 1rem!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
