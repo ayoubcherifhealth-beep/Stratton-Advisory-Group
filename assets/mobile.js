@@ -46,4 +46,6 @@
     addEventListener('resize',function(){loopW=0;});
     requestAnimationFrame(step);
   }
+
+  if(document.getElementById('qualify')){document.body.classList.add('home-m');var mq=document.querySelector('.m-bar .m-quote');if(mq)mq.setAttribute('href','#quote');}
 })();

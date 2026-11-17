@@ -219,3 +219,36 @@ section[aria-labelledby="who-h"] .sec-head::after{content:none!important}
 .site-footer .socials{gap:.7rem!important}
 .site-footer .socials a{display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;width:42px!important;height:42px!important;border-color:rgba(255,255,255,.22)!important}
 .site-footer .socials svg{width:17px!important;height:17px!important;display:block}
+
+/* Mobile v7: conversion-first homepage
+   1) The 4-step quote quiz sits right in the first screen
+   2) Social proof (reviews) right after it
+   3) Fewer, shorter sections after that */
+.hero-grid > #quote{display:block!important;margin:1.6rem 0 0!important;order:0}
+.hero .hero-quote-m{display:none!important}
+.hero-ctas{margin:1.4rem 0 0!important}
+#quote .form-card{border-radius:18px!important;box-shadow:0 14px 40px rgba(10,20,48,.14)!important;border:1px solid #ece5d6}
+#quote .fc-head{padding:1.3rem 1.2rem .4rem!important}
+#quote .fc-head h2{font-size:1.25rem!important;margin:0 0 .2rem!important}
+#quote .fc-head p{font-size:.88rem!important;margin:0!important}
+#quote .fc-body{padding:.9rem 1.2rem 1.3rem!important}
+#qualify .q-opt span{padding:.95rem 1rem!important;border-radius:12px!important;font-size:1rem!important}
+#qualify legend{font-size:1.08rem!important}
+body.home-m main{display:flex;flex-direction:column}
+body.home-m main > section{order:20}
+body.home-m main > .hero{order:1}
+body.home-m main > .trust{order:2}
+body.home-m main > section[aria-labelledby="rev-h"]{order:3}
+body.home-m main > section[aria-labelledby="who-h"]{order:4}
+body.home-m main > section[aria-labelledby="pitch-h"]{order:5}
+body.home-m main > section[aria-labelledby="adv-h"]{order:6}
+body.home-m main > section[aria-labelledby="proc-h"]{order:7}
+body.home-m main > .carriers{order:8}
+body.home-m main > #employer-plan{order:9}
+body.home-m main > section[aria-labelledby="map-h"]{order:10}
+body.home-m main > #faq{order:11}
+body.home-m main > section[aria-labelledby="guides-h"]{order:12}
+body.home-m main > #contact{order:13}
+body.home-m main > section[aria-labelledby="uw-h"]{display:none}
+section[aria-labelledby="rev-h"]{padding-top:2.2rem!important;padding-bottom:2rem!important}
+.hero-grid{row-gap:0!important;gap:0!important}
