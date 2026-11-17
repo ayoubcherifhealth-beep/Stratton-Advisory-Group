@@ -224,9 +224,7 @@ section[aria-labelledby="who-h"] .sec-head::after{content:none!important}
    1) The 4-step quote quiz sits right in the first screen
    2) Social proof (reviews) right after it
    3) Fewer, shorter sections after that */
-.hero-grid > #quote{display:block!important;margin:1.6rem 0 0!important;order:0}
-.hero .hero-quote-m{display:none!important}
-.hero-ctas{margin:1.4rem 0 0!important}
+.hero-grid > #quote{display:none!important}
 #quote .form-card{border-radius:18px!important;box-shadow:0 14px 40px rgba(10,20,48,.14)!important;border:1px solid #ece5d6}
 #quote .fc-head{padding:1.3rem 1.2rem .4rem!important}
 #quote .fc-head h2{font-size:1.25rem!important;margin:0 0 .2rem!important}
