@@ -125,3 +125,25 @@ section[aria-labelledby="uw-h"] p:nth-of-type(2){display:none}
 .guide-home .go,.guide-home .k{display:none!important}
 .guide-home h3{font-size:1rem!important;margin:0!important}
 .f-legal p{font-size:.66rem!important;line-height:1.5!important}
+
+/* Mobile v4: minimal and modern */
+.announce{display:none!important}
+.sec .eyebrow{display:none!important}
+.h2,.sec-head .h2{font-size:1.5rem!important;line-height:1.2!important;letter-spacing:0!important}
+.sec-head{margin-bottom:1.4rem!important}
+.sec-head p{font-size:.95rem}
+section[aria-labelledby="pitch-h"] .wrap{padding-top:2rem!important;padding-bottom:2rem!important;gap:.9rem!important}
+section[aria-labelledby="pitch-h"] h2{font-size:1.4rem!important}
+section[aria-labelledby="pitch-h"] p{font-size:.95rem!important;line-height:1.6!important}
+section[aria-labelledby="pitch-h"] span > a:not(.btn){display:none!important}
+section[aria-labelledby="pitch-h"] .btn{width:100%;justify-content:center}
+.carriers .disclaim{display:none!important}
+#employer-plan .prose p:nth-of-type(2){display:none}
+#employer-plan p{font-size:.95rem;line-height:1.6}
+#contact .cta-grid > .reveal:first-child > p:last-child{display:none!important}
+#contact .cta-grid{gap:1.4rem!important}
+.site-footer .f-brand p{display:none}
+body{-webkit-font-smoothing:antialiased}
+.persona .k{display:none!important}
+.advisor{gap:1.2rem!important}
+.advisor .portrait{max-width:180px!important;margin:0 auto .4rem!important}
