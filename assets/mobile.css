@@ -134,7 +134,8 @@ section[aria-labelledby="uw-h"] p:nth-of-type(2){display:none}
 section[aria-labelledby="pitch-h"] .wrap{padding-top:2rem!important;padding-bottom:2rem!important;gap:.9rem!important}
 section[aria-labelledby="pitch-h"] h2{font-size:1.4rem!important}
 section[aria-labelledby="pitch-h"] p{font-size:.95rem!important;line-height:1.6!important}
-section[aria-labelledby="pitch-h"] span > a:not(.btn){display:none!important}
+section[aria-labelledby="pitch-h"] span > a:last-child:not(.btn){display:none!important}
+section[aria-labelledby="pitch-h"] span > a[href*="subsidy-calculator"]{display:block!important;margin-top:.3rem;color:var(--ink);font-weight:600}
 section[aria-labelledby="pitch-h"] .btn{width:100%;justify-content:center}
 .carriers .disclaim{display:none!important}
 #employer-plan .prose p:nth-of-type(2){display:none}
