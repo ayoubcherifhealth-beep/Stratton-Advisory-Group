@@ -492,3 +492,6 @@ Each Florida city guide lists the nearby ZIP codes and communities we serve.
 - [Overpaying for health insurance through work? Employer plan comparison](https://strattonadvisorygroup.com/overpaying-for-health-insurance-through-work/)
 - [Health insurance for people who travel for work: national PPO networks](https://strattonadvisorygroup.com/health-insurance-for-people-who-travel/)
 - [State continuation (mini-COBRA) laws: 31-state chart with statutes](https://strattonadvisorygroup.com/state-continuation-coverage-laws/)
+
+## Disclosures
+- [Insurance Disclosures](https://strattonadvisorygroup.com/disclosures/): Licensing (NPN 22089749, 31 states), how brokers are paid (carrier commissions, free to the client), how private medically underwritten plans differ from ACA Marketplace plans, and how to file a complaint.
