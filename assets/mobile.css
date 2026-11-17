@@ -207,3 +207,12 @@ section.bg-ink:after,section.bg-ink:before{display:none!important}
 /* Situation cards move on their own; swipe still works */
 section .persona.auto{scroll-snap-type:none!important}
 section[aria-labelledby="who-h"] .sec-head::after{content:none!important}
+
+/* Floating Call / Text / Quote pill */
+.fab-call,.fab-sms{display:none!important}
+.m-bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:99;display:grid;grid-template-columns:auto auto 1fr;gap:.4rem;padding:.4rem;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(10,20,48,.08);border-radius:999px;box-shadow:0 12px 32px rgba(10,20,48,.18);transform:translateY(140%);transition:transform .35s ease}
+.m-bar.show{transform:none}
+.m-bar a{display:flex;align-items:center;justify-content:center;gap:.35rem;height:44px;padding:0 1rem;border-radius:999px;font:600 .9rem/1 var(--sans);text-decoration:none}
+.m-bar svg{width:18px;height:18px}
+.m-bar .m-call,.m-bar .m-text{color:var(--ink);background:transparent}
+.m-bar .m-quote{background:var(--gold);color:var(--ink)}
