@@ -72,3 +72,10 @@ table.compare td:first-child,table.compare th:first-child{width:27%}
 .persona a.wide img.pbg,.persona a img.pbg{display:none!important}
 .persona a.wide b{font-size:1rem}
 .persona a.wide p{display:none}
+
+/* Less repetition on phones (content stays in the page for Google) */
+section[aria-labelledby="ver-h"]{display:none}      /* Credibility cards: license is in the trust strip and footer */
+#new-guides{display:none}                            /* Guide links stay in the menu, Guides section and footer */
+#employer-plan ul{display:none}                      /* Keep the intro, the honest notes and the button */
+.carriers .disclaim{font-size:.68rem;line-height:1.5;opacity:.8}
+.city-links a:not(:last-child){display:none}         /* Just "All service areas" under the state list */
