@@ -207,3 +207,10 @@ section.bg-ink:after,section.bg-ink:before{display:none!important}
 .page-hero .crumbs,.page-hero .crumbs li{color:#7a7f8c!important}
 .page-hero .crumbs li+li:before{color:#b9b3a6!important}
 .page-hero .btn-line{color:var(--ink)!important;border-color:#cfc6b2!important;background:#fff!important}
+/* Carrier logos: same size, no white boxes */
+.carriers{padding:1.8rem 0 1.4rem!important}
+.marquee img{width:92px!important;max-width:92px!important;height:28px!important;object-fit:contain!important;margin:0 1rem!important;mix-blend-mode:multiply}
+
+/* Situation cards move on their own; swipe still works */
+section .persona.auto{scroll-snap-type:none!important}
+section[aria-labelledby="who-h"] .sec-head::after{content:none!important}
