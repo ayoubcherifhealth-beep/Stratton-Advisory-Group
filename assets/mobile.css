@@ -80,3 +80,22 @@ section[aria-labelledby="ver-h"]{display:none}      /* Credibility cards: licens
 #employer-plan ul{display:none}                      /* Keep the intro, the honest notes and the button */
 .carriers .disclaim{font-size:.68rem;line-height:1.5;opacity:.8}
 .city-links a:not(:last-child){display:none}         /* Just "All service areas" under the state list */
+
+/* Mobile hero v2: photo visible on top, short copy, clean credentials */
+.announce .wrap{flex-wrap:wrap!important;justify-content:center;text-align:center;row-gap:.2rem}
+.announce [data-cd-label]{white-space:normal;display:inline-block}
+.announce [data-cd-label]::first-letter{text-transform:uppercase}
+.hero-grid{padding-top:46vw!important;padding-bottom:1.6rem!important}
+.hero h1{font-size:1.8rem!important;line-height:1.14!important;margin:0 0 .8rem!important;text-shadow:0 2px 14px rgba(10,20,48,.55)}
+.hero .lead:not(.lead-m){display:none!important}
+.hero .lead-m{display:block!important;font-size:1rem;line-height:1.55;margin:0}
+.hero-ctas{display:grid!important;grid-template-columns:1fr;gap:.6rem;margin:1.2rem 0 0!important}
+.hero-ctas .btn{width:100%;justify-content:center}
+.hero .assure{display:none!important}
+.trust .wrap ul{display:grid!important;grid-template-columns:1fr 1fr!important;overflow:visible!important}
+.trust .wrap ul li{flex:none!important;width:auto!important;padding:.8rem .5rem!important;border-bottom:1px solid var(--line)}
+.trust li:nth-child(5){display:none}
+.trust li b{font-size:.95rem}
+.trust li span{font-size:.75rem}
+.trust .wrap ul li{border-left:0!important;border-right:0!important}
+.trust .wrap ul li:nth-child(odd){border-right:1px solid var(--line)!important}
