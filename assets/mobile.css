@@ -1,0 +1,69 @@
+/* Mobile clean-up (loaded only at max-width:760px) */
+.sec{padding:3rem 0}
+.sec-head{margin-bottom:1.6rem}
+.h2{font-size:1.6rem}
+.lead{font-size:1rem}
+
+/* Announcement bar: one short line */
+.announce{font-size:.72rem}
+.announce .wrap{flex-wrap:nowrap;gap:.6rem;padding-top:.45rem;padding-bottom:.45rem}
+.announce .long,.announce [data-countdown],.announce .dot{display:none!important}
+.announce a{white-space:nowrap}
+
+/* Hero: tighter */
+.hero .eyebrow{display:none}
+.hero h1{font-size:2rem;line-height:1.12;margin:.6rem 0 .9rem}
+.hero .lead{font-size:.98rem}
+.hero-ctas{margin:1.3rem 0 1.2rem}
+
+/* Trust strip: scroll sideways instead of squeezing */
+.trust ul{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.trust li{flex:0 0 44%;scroll-snap-align:start}
+
+/* "Which of these sounds like you?" cards: compact */
+.persona a{min-height:0!important;padding:1.1rem 1.2rem!important}
+.persona a .pbg{display:none}
+.persona a b{font-size:1rem}
+
+/* Map: list of states is easier to tap than a tiny map */
+#covmap{display:none}
+.state-list{columns:2!important;font-size:.95rem}
+.state-list li{padding:.3rem 0}
+
+/* New guides: two compact columns */
+#new-guides .prof-grid{padding:.8rem}
+#new-guides .prof-grid ul{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+#new-guides .prof-grid li a{padding:.6rem .7rem}
+#new-guides .prof-grid small{display:none}
+
+/* Guides list: first three only, shorter */
+.guide-home li:nth-child(n+4){display:none}
+.guide-home p{display:none}
+
+/* Contact band: the form and buttons are enough */
+.cta-band .contact-lines{display:none}
+
+/* Footer: tidy */
+.f-top{gap:1.2rem;padding:2.4rem 0 1.2rem}
+.f-brand p{display:none}
+.site-footer h3.m-toggle{cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin:0;padding:.9rem 0;border-top:1px solid var(--line-dark)}
+.site-footer h3.m-toggle:after{content:"+";font-size:1.2rem;opacity:.7}
+.site-footer h3.m-toggle.open:after{content:"–"}
+.site-footer h3.m-toggle + ul{display:none;padding-bottom:.6rem}
+.site-footer h3.m-toggle.open + ul{display:block}
+.f-areas details summary{cursor:pointer;color:#ffffffd9;font-weight:600;list-style:none;padding:.4rem 0}
+.f-areas details summary::-webkit-details-marker{display:none}
+.f-areas details summary:after{content:" +";opacity:.7}
+.f-areas details[open] summary:after{content:" –"}
+.f-legal{font-size:.7rem;padding:1.4rem 0 6rem}
+
+/* One floating button instead of two */
+.fab-sms{display:none!important}
+
+/* Comparison tables: fit the screen instead of side-scrolling */
+.table-wrap{overflow:visible!important}
+table.compare{min-width:0!important;width:100%!important;font-size:.78rem;table-layout:fixed}
+table.compare th,table.compare td{padding:.55rem .45rem!important;word-break:normal;overflow-wrap:anywhere}
+.link-arrow{white-space:nowrap}
+table.compare th{font-size:.6rem;letter-spacing:.04em;overflow-wrap:normal;word-break:normal;hyphens:auto;line-height:1.35}
+table.compare td:first-child,table.compare th:first-child{width:27%}
