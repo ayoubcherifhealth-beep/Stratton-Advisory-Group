@@ -178,3 +178,26 @@ section .guide-home .k{display:block!important;font-size:.62rem;letter-spacing:.
 section .guide-home h3{font-family:var(--sans)!important;text-transform:none!important;font-variant:normal!important;letter-spacing:0!important;font-size:1.02rem!important;font-weight:650;line-height:1.35}
 section .guide-home .gtxt p{display:block!important;font-size:.88rem;line-height:1.55;color:#5b6170;margin:.4rem 0 0}
 section .guide-home .go{display:block!important;margin-top:auto;font-size:.88rem;font-weight:600;color:var(--navy-2)}
+
+/* Mobile v6: less blue — light hero, light process and contact sections */
+.hero{background:#fff!important;color:var(--ink)!important}
+.hero:before,.hero:after{display:none!important}
+.hero-still img{-webkit-mask-image:linear-gradient(#000 55%,#0000 100%)!important;mask-image:linear-gradient(#000 55%,#0000 100%)!important}
+.hero h1{color:var(--ink)!important;text-shadow:0 0 18px #fff,0 0 2px #fff!important}
+.hero h1 .accent{color:var(--gold-ink,#8a6a2c)!important}
+.hero .lead{color:#3d4354!important;text-shadow:none!important}
+.hero .btn-line{color:var(--ink)!important;border-color:#cfc6b2!important;background:#fff!important}
+.hero-grid{padding-top:52vw!important}
+section.bg-ink{background:var(--ivory,#f8f5ee)!important;color:var(--ink)!important}
+section.bg-ink h2,section.bg-ink h3,section.bg-ink .step h3{color:var(--ink)!important}
+section.bg-ink .step:before{background:var(--ivory,#f8f5ee)!important;color:var(--gold-ink,#8a6a2c)!important}
+section.bg-ink .step .when{color:var(--gold-ink,#8a6a2c)!important}
+section.bg-ink:after,section.bg-ink:before{display:none!important}
+.cta-band{background:var(--ivory,#f8f5ee)!important;color:var(--ink)!important}
+.cta-band:before,.cta-band:after{display:none!important}
+.cta-band h2{color:var(--ink)!important}
+.cta-band .accent,.cta-band .eyebrow{color:var(--gold-ink,#8a6a2c)!important}
+.link-arrow,section .persona a .go,section .guide-home .go{color:var(--ink)!important}
+.hero .hero-bg{display:none!important}
+.hero-grid,.hero .wrap{background:transparent!important}
+.site-footer{background:#15171c!important}
