@@ -87,8 +87,7 @@ section[aria-labelledby="ver-h"]{display:none}      /* Credibility cards: licens
 .announce [data-cd-label]::first-letter{text-transform:uppercase}
 .hero-grid{padding-top:46vw!important;padding-bottom:1.6rem!important}
 .hero h1{font-size:1.8rem!important;line-height:1.14!important;margin:0 0 .8rem!important;text-shadow:0 2px 14px rgba(10,20,48,.55)}
-.hero .lead:not(.lead-m){display:none!important}
-.hero .lead-m{display:block!important;font-size:1rem;line-height:1.55;margin:0}
+.hero .lead{font-size:.98rem;line-height:1.55;margin:0}
 .hero-ctas{display:grid!important;grid-template-columns:1fr;gap:.6rem;margin:1.2rem 0 0!important}
 .hero-ctas .btn{width:100%;justify-content:center}
 .hero .assure{display:none!important}
