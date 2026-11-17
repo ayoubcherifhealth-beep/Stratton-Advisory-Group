@@ -319,3 +319,10 @@ section .persona a b,section .persona a.wide b{font-family:var(--m-head)!importa
 .form-card{border-radius:20px!important}
 .form-card:before{display:none!important}
 .trust .wrap ul li:not(:nth-child(4)){border-right:0!important}
+/* Stats in one row */
+.trust .wrap ul{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:0 .5rem!important;padding:1.1rem 0!important}
+.trust .wrap ul li{border-left:2px solid var(--gold)!important;padding:0 0 0 .45rem!important}
+.trust li b{font-size:.82rem!important;white-space:nowrap!important;letter-spacing:-.02em!important}
+.trust li span{font-size:.5rem!important;letter-spacing:.04em!important;line-height:1.25!important}
+.trust .wrap ul{grid-template-columns:1.3fr .9fr 1.15fr .95fr!important;gap:0 .4rem!important}
+.trust li b{font-size:.76rem!important}
