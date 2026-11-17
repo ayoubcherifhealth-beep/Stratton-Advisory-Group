@@ -67,3 +67,8 @@ table.compare th,table.compare td{padding:.55rem .45rem!important;word-break:nor
 .link-arrow{white-space:nowrap}
 table.compare th{font-size:.6rem;letter-spacing:.04em;overflow-wrap:normal;word-break:normal;hyphens:auto;line-height:1.35}
 table.compare td:first-child,table.compare th:first-child{width:27%}
+/* Make the last "situation" card the same size as the others */
+.persona a.wide{min-height:0!important;padding:1.1rem 1.2rem!important;justify-content:flex-start!important}
+.persona a.wide img.pbg,.persona a img.pbg{display:none!important}
+.persona a.wide b{font-size:1rem}
+.persona a.wide p{display:none}
