@@ -21,14 +21,12 @@
 .trust li{flex:0 0 44%;scroll-snap-align:start}
 
 /* "Which of these sounds like you?" cards: compact */
-.persona a{min-height:0!important;padding:1.1rem 1.2rem!important}
-.persona a .pbg{display:none}
+.persona a{min-height:170px!important;padding:1.1rem 1.2rem!important;justify-content:flex-end!important}
 .persona a b{font-size:1rem}
 
 /* Map: list of states is easier to tap than a tiny map */
-#covmap{display:none}
-.state-list{columns:2!important;font-size:.95rem}
-.state-list li{padding:.3rem 0}
+#covmap{display:block!important;width:100%;height:auto}
+section[aria-labelledby="map-h"] .state-list{display:none!important}
 
 /* New guides: two compact columns */
 #new-guides .prof-grid{padding:.8rem}
@@ -68,8 +66,11 @@ table.compare th,table.compare td{padding:.55rem .45rem!important;word-break:nor
 table.compare th{font-size:.6rem;letter-spacing:.04em;overflow-wrap:normal;word-break:normal;hyphens:auto;line-height:1.35}
 table.compare td:first-child,table.compare th:first-child{width:27%}
 /* Make the last "situation" card the same size as the others */
-.persona a.wide{min-height:0!important;padding:1.1rem 1.2rem!important;justify-content:flex-start!important}
-.persona a.wide img.pbg,.persona a img.pbg{display:none!important}
+.persona a.wide{min-height:170px!important;padding:1.1rem 1.2rem!important;justify-content:flex-end!important}
+.persona a.wide img.pbg,.persona a img.pbg{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;z-index:-2!important}
+.persona a.wide{isolation:isolate!important;position:relative!important}
+.persona a.wide:before{z-index:-1!important}
+.persona a.wide:before,.persona a.wide:hover:before{background:linear-gradient(#0a143026 0%,#0a14308c 45%,#0a1430eb 100%)!important}
 .persona a.wide b{font-size:1rem}
 .persona a.wide p{display:none}
 
