@@ -22,4 +22,15 @@
 
 
   if(document.getElementById('qualify')){document.body.classList.add('home-m');}
+
+  if(document.getElementById('qualify')){
+    var hc=document.querySelector('.hero .hero-ctas');
+    if(hc&&!document.querySelector('.m-checks')){
+      var ul=document.createElement('ul');ul.className='m-checks';ul.innerHTML='<li>Free. No obligation.</li><li>Plans from 30+ carriers, side by side.</li>';
+      hc.parentNode.insertBefore(ul,hc);
+      var a=document.createElement('a');a.className='m-advisor';a.href='about-ayoub-cherif/';
+      a.innerHTML='<img src="images/ayoub-cherif-avatar-128.webp" width="46" height="46" alt="Ayoub Cherif"><div><b>A real, licensed advisor. Licensed in 31 states.</b><span>Meet Ayoub \u2192</span></div>';
+      hc.parentNode.insertBefore(a,hc.nextSibling);
+    }
+  }
 })();
