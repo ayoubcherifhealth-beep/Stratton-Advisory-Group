@@ -24,7 +24,7 @@
   if(per&&!per.dataset.auto&&!(window.matchMedia('(prefers-reduced-motion: reduce)').matches)){
     per.dataset.auto='1';
     var cards=[].slice.call(per.children);
-    cards.forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');k.setAttribute('tabindex','-1');k.classList.add('clone');per.appendChild(k);});
+    cards.forEach(function(c){var k=c.cloneNode(true);k.setAttribute('aria-hidden','true');k.setAttribute('tabindex','-1');k.classList.add('clone');k.classList.remove('reveal','d1','d2','d3');k.classList.add('in');k.style.opacity='1';k.style.transform='none';per.appendChild(k);});
     per.classList.add('auto');
     var paused=false,timer=null,pos=-1,last=0,speed=0.04;
     function setW(){return cards[cards.length-1].offsetLeft+cards[cards.length-1].offsetWidth-cards[0].offsetLeft+parseFloat(getComputedStyle(per).columnGap||14);}

@@ -254,3 +254,6 @@ body.home-m main > .carriers{order:1!important;padding:1.4rem 0 1rem!important}
 .hero-ctas a[href^="tel:"]{display:none!important}
 .hero .hero-quote-m{background:var(--gold)!important;border-color:var(--gold)!important;color:var(--ink)!important;font-weight:600}
 body.home-m main > section[aria-labelledby="rev-h"]{order:10!important}
+
+section .persona a.clone,section .persona a.reveal{opacity:1!important;transform:none!important}
+section .persona a img.pbg,section .persona a.wide img.pbg{height:180px!important;max-height:180px!important;aspect-ratio:auto!important;flex:0 0 180px}
