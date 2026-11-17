@@ -91,10 +91,10 @@ section[aria-labelledby="ver-h"]{display:none}      /* Credibility cards: licens
 .hero-ctas{display:grid!important;grid-template-columns:1fr;gap:.6rem;margin:2rem 0 0!important}
 .hero-ctas .btn{width:100%;justify-content:center}
 .hero .assure{display:none!important}
-.trust .wrap ul{display:grid!important;grid-template-columns:1fr 1fr!important;overflow:visible!important}
-.trust .wrap ul li{flex:none!important;width:auto!important;padding:.8rem .5rem!important;border-bottom:1px solid var(--line)}
+.trust .wrap ul{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;overflow:visible!important}
+.trust .wrap ul li{flex:none!important;width:auto!important;padding:.75rem .2rem!important;border-bottom:0!important;text-align:center}
 .trust li:nth-child(5){display:none}
-.trust li b{font-size:.95rem}
-.trust li span{font-size:.75rem}
+.trust li b{font-size:.7rem!important;white-space:nowrap;letter-spacing:0}
+.trust li span{font-size:.62rem!important;line-height:1.3;display:block}
 .trust .wrap ul li{border-left:0!important;border-right:0!important}
-.trust .wrap ul li:nth-child(odd){border-right:1px solid var(--line)!important}
+.trust .wrap ul li:not(:nth-child(4)){border-right:1px solid var(--line)!important}
