@@ -216,3 +216,6 @@ section[aria-labelledby="who-h"] .sec-head::after{content:none!important}
 .m-bar svg{width:18px;height:18px}
 .m-bar .m-call,.m-bar .m-text{color:var(--ink);background:transparent}
 .m-bar .m-quote{background:var(--gold);color:var(--ink)}
+.site-footer .socials{gap:.7rem!important}
+.site-footer .socials a{display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;width:42px!important;height:42px!important;border-color:rgba(255,255,255,.22)!important}
+.site-footer .socials svg{width:17px!important;height:17px!important;display:block}
