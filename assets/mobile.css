@@ -193,10 +193,6 @@ section.bg-ink h2,section.bg-ink h3,section.bg-ink .step h3{color:var(--ink)!imp
 section.bg-ink .step:before{background:var(--ivory,#f8f5ee)!important;color:var(--gold-ink,#8a6a2c)!important}
 section.bg-ink .step .when{color:var(--gold-ink,#8a6a2c)!important}
 section.bg-ink:after,section.bg-ink:before{display:none!important}
-.cta-band{background:var(--ivory,#f8f5ee)!important;color:var(--ink)!important}
-.cta-band:before,.cta-band:after{display:none!important}
-.cta-band h2{color:var(--ink)!important}
-.cta-band .accent,.cta-band .eyebrow{color:var(--gold-ink,#8a6a2c)!important}
 .link-arrow,section .persona a .go,section .guide-home .go{color:var(--ink)!important}
 .hero .hero-bg{display:none!important}
 .hero-grid,.hero .wrap{background:transparent!important}
@@ -210,5 +206,3 @@ section.bg-ink:after,section.bg-ink:before{display:none!important}
 .page-hero .crumbs,.page-hero .crumbs li{color:#7a7f8c!important}
 .page-hero .crumbs li+li:before{color:#b9b3a6!important}
 .page-hero .btn-line{color:var(--ink)!important;border-color:#cfc6b2!important;background:#fff!important}
-.cta-band .lead,.cta-band p{color:#3d4354}
-.cta-band .contact-lines a{color:var(--ink)!important}
