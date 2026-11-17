@@ -200,7 +200,6 @@ section.bg-ink:after,section.bg-ink:before{display:none!important}
 .link-arrow,section .persona a .go,section .guide-home .go{color:var(--ink)!important}
 .hero .hero-bg{display:none!important}
 .hero-grid,.hero .wrap{background:transparent!important}
-.site-footer{background:#15171c!important}
 /* Inner pages: light header area instead of navy */
 .page-hero{background:var(--ivory,#f8f5ee)!important;color:var(--ink)!important}
 .page-hero:before,.page-hero:after{display:none!important}
