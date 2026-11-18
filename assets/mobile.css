@@ -351,3 +351,7 @@ html{background:transparent!important}
 /* Overscroll (rubber-band) areas: white above the header, navy below the footer */
 html{background:linear-gradient(to bottom,#fff 0,#fff 50%,var(--ink,#0a1430) 50%,var(--ink,#0a1430) 100%)!important;background-attachment:fixed!important}
 body{background:var(--paper,#fff)!important}
+/* iPhone Safari paints its bottom bar with the color of any wide bar pinned near the bottom.
+   Use the small round buttons on the right instead of the full-width bar. */
+.m-bar{display:none!important}
+.fab-call,.fab-sms{display:flex!important}
