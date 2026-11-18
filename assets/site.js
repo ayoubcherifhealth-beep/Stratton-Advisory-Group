@@ -34,3 +34,8 @@ var fields={lead_source:sess.source,lead_source_first_visit:first.source,landing
 document.querySelectorAll("form[data-lead]").forEach(function(f){Object.keys(fields).forEach(function(k){var i=f.querySelector('input[name="'+k+'"]');if(!i){i=document.createElement("input");i.type="hidden";i.name=k;f.appendChild(i)}i.value=fields[k]})});
 window.SAG_LEAD_SOURCE=fields;
 })();
+;(function(){"use strict";
+/* Booking-link tracking: when a visitor clicks a Google booking link, send their lead source and pages to Google Analytics so the appointment can be matched to where the lead came from. */
+document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href*="calendar.app.google"],a[href*="calendar.google.com"]');if(!a)return;var f=window.SAG_LEAD_SOURCE||{};var p={lead_source:f.lead_source||"",landing_page:f.landing_page_this_visit||"",quote_button_page:location.pathname,pages_viewed:(f.pages_viewed_this_visit||"").slice(0,95),first_visit_source:f.lead_source_first_visit||"",click_time:new Date().toISOString().slice(0,16)};
+try{window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:"booking_source"},p));if(typeof window.gtag==="function")window.gtag("event","booking_source",Object.assign({transport_type:"beacon"},p))}catch(err){}},true);
+})();
