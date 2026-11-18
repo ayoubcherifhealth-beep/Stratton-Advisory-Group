@@ -360,3 +360,9 @@ body{background:var(--paper,#fff)!important}
 .fab-quote.show{opacity:1;pointer-events:auto;transform:none}
 .fab-quote svg{width:20px;height:20px}
 .fab-quote span{font:700 .56rem/1 var(--sans);letter-spacing:.02em}
+
+/* Quote button v2: navy pill with label, matches the text button */
+.fab-quote{width:auto!important;height:46px!important;flex-direction:row!important;gap:.45rem!important;padding:0 1.05rem 0 .85rem!important;border-radius:999px!important;background:linear-gradient(135deg,#13204a,#0a1430)!important;color:#fff!important;border:1px solid rgba(201,169,106,.65)!important;box-shadow:0 10px 26px rgba(10,20,48,.32),inset 0 1px 0 rgba(255,255,255,.08)!important;right:16px!important;bottom:calc(140px + env(safe-area-inset-bottom))!important}
+.fab-quote svg{width:18px!important;height:18px!important;color:var(--gold)}
+.fab-quote span{font:700 .82rem/1 var(--sans)!important;letter-spacing:.01em!important;white-space:nowrap}
+.fab-quote:active{transform:scale(.97)}
