@@ -22,4 +22,17 @@
 
 
 
+
+  if(!document.querySelector('.fab-quote')&&window.matchMedia('(max-width:760px)').matches){
+    var q=document.createElement('a');q.className='fab-quote';
+    var onQuote=/\/get-a-quote\/?$/.test(location.pathname);
+    q.href=(document.querySelector('a.brand')?new URL('get-a-quote/',new URL(document.querySelector('a.brand').getAttribute('href'),location.href)).href:'/get-a-quote/');
+    q.setAttribute('aria-label','Get a free quote');
+    q.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M9 4h6a1 1 0 011 1v1H8V5a1 1 0 011-1zM8 6H6.5A1.5 1.5 0 005 7.5v12A1.5 1.5 0 006.5 21h11a1.5 1.5 0 001.5-1.5v-12A1.5 1.5 0 0017.5 6H16"/></svg><span>Quote</span>';
+    if(!onQuote) document.body.appendChild(q);
+    var sms=document.querySelector('.fab-sms');
+    var sync=function(){q.classList.toggle('show',!!(sms&&sms.classList.contains('show')))};
+    if(sms&&window.MutationObserver){new MutationObserver(sync).observe(sms,{attributes:true,attributeFilter:['class']})}
+    sync();
+  }
 })();

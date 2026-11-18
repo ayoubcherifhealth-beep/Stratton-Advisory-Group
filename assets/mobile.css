@@ -355,3 +355,8 @@ body{background:var(--paper,#fff)!important}
    Use the small round buttons on the right instead of the full-width bar. */
 .m-bar{display:none!important}
 .fab-call,.fab-sms{display:flex!important}
+/* Floating quote button above the text and call buttons */
+.fab-quote{position:fixed;right:16px;bottom:calc(136px + env(safe-area-inset-bottom));z-index:96;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:54px;height:54px;border-radius:50%;background:#fff;color:var(--ink);border:1.5px solid var(--gold);box-shadow:0 8px 22px rgba(10,20,48,.22);text-decoration:none;opacity:0;pointer-events:none;transform:translateY(16px) scale(.9);transition:opacity .3s,transform .3s}
+.fab-quote.show{opacity:1;pointer-events:auto;transform:none}
+.fab-quote svg{width:20px;height:20px}
+.fab-quote span{font:700 .56rem/1 var(--sans);letter-spacing:.02em}
