@@ -366,3 +366,7 @@ body{background:var(--paper,#fff)!important}
 .fab-quote svg{width:18px!important;height:18px!important;color:var(--gold)}
 .fab-quote span{font:700 .82rem/1 var(--sans)!important;letter-spacing:.01em!important;white-space:nowrap}
 .fab-quote:active{transform:scale(.97)}
+/* 2-column fact tables: fit the screen instead of scrolling sideways (Nov 17) */
+.prose table:not(:has(thead)),.prose table:has(caption){min-width:0!important;table-layout:fixed}
+.prose table:not(:has(thead)) th,.prose table:has(caption) th[scope="row"]{width:38%}
+.prose table:not(:has(thead)) th,.prose table:not(:has(thead)) td,.prose table:has(caption) th,.prose table:has(caption) td{white-space:normal;word-wrap:break-word;overflow-wrap:anywhere}
