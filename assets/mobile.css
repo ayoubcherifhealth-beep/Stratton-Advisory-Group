@@ -333,3 +333,9 @@ section .persona a b,section .persona a.wide b{font-family:var(--m-head)!importa
 
 .m-checks,.m-advisor{display:flex}
 .m-checks{display:grid}
+/* Edge-to-edge on iPhone: page shows under the status bar and Safari toolbar */
+html{background:var(--ink,#0a1430)}
+body{background:var(--paper,#fff)}
+.site-header{padding-top:env(safe-area-inset-top)!important}
+.site-footer{padding-bottom:calc(1.5rem + env(safe-area-inset-bottom))!important}
+.fab-call,.fab-sms{margin-bottom:env(safe-area-inset-bottom)}
