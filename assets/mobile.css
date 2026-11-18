@@ -348,3 +348,6 @@ html{background:transparent!important}
 /* Closed menu must not sit at the screen edge (iPhone Safari samples its white background) */
 .menu:not(.open){display:none!important}
 .m-bar:not(.show){visibility:hidden}
+/* Overscroll (rubber-band) areas: white above the header, navy below the footer */
+html{background:linear-gradient(to bottom,#fff 0,#fff 50%,var(--ink,#0a1430) 50%,var(--ink,#0a1430) 100%)!important;background-attachment:fixed!important}
+body{background:var(--paper,#fff)!important}
