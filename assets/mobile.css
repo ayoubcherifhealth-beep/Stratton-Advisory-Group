@@ -124,7 +124,7 @@ section[aria-labelledby="uw-h"] p:nth-of-type(2){display:none}
 .guide-home li a{padding:.9rem 0!important;gap:.8rem!important}
 .guide-home .go,.guide-home .k{display:none!important}
 .guide-home h3{font-size:1rem!important;margin:0!important}
-.f-legal p{font-size:.66rem!important;line-height:1.5!important}
+.f-legal p{font-size:.75rem!important;line-height:1.5!important}
 
 /* Mobile v4: minimal and modern */
 .announce{display:none!important}
