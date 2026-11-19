@@ -378,3 +378,7 @@ body{background:var(--paper,#fff)!important}
 /* Header pushed up under the status bar (Nov 19) */
 .site-header{padding-top:max(0px,calc(env(safe-area-inset-top) - 14px))!important}
 .site-header .nav{height:44px}
+
+/* Header pushed a little higher (Nov 19) */
+.site-header{padding-top:max(calc(env(safe-area-inset-top) - 18px),calc(env(safe-area-inset-top) * .5))!important}
+.site-header .nav{height:40px}
