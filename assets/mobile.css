@@ -374,3 +374,7 @@ body{background:var(--paper,#fff)!important}
 /* Thinner mobile header (Nov 19) */
 .site-header .nav{height:48px}
 .site-header .brand img{height:27px}
+
+/* Header pushed up under the status bar (Nov 19) */
+.site-header{padding-top:max(0px,calc(env(safe-area-inset-top) - 14px))!important}
+.site-header .nav{height:44px}
