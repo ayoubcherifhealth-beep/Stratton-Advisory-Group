@@ -370,3 +370,4 @@ body{background:var(--paper,#fff)!important}
 .prose table:not(:has(thead)),.prose table:has(caption){min-width:0!important;table-layout:fixed}
 .prose table:not(:has(thead)) th,.prose table:has(caption) th[scope="row"]{width:38%}
 .prose table:not(:has(thead)) th,.prose table:not(:has(thead)) td,.prose table:has(caption) th,.prose table:has(caption) td{white-space:normal;word-wrap:break-word;overflow-wrap:anywhere}
+.trust .g-li{display:flex!important;align-items:center;justify-content:center}.trust .g-badge{padding:.35rem .45rem .3rem!important;gap:.15rem!important;border-radius:8px!important}.trust .g-score{font-size:.82rem!important}.trust .g-stars{font-size:.62rem!important;letter-spacing:0!important}.trust .g-name{font-size:.56rem!important;display:block}
