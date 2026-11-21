@@ -27,3 +27,4 @@
 :root{--gold-soft:#fdfcf8;--ivory:#fdfcf8}
 .ppo-note,.fp-link{background:#fdfcf8}
 @media (min-width:761px){section[aria-labelledby="pitch-h"]{background:#f3ebda!important}}
+@media (min-width:761px){section[aria-labelledby="pitch-h"]{border-top:0!important}.trust+section[aria-labelledby="pitch-h"]{box-shadow:none}.trust:has(+section[aria-labelledby="pitch-h"]){border-bottom-color:#e6d9bd!important}}
