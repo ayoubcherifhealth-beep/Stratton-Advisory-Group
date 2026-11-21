@@ -26,3 +26,4 @@
 /* Lighter cream backgrounds site-wide (Nov 21) */
 :root{--gold-soft:#fdfcf8;--ivory:#fdfcf8}
 .ppo-note,.fp-link{background:#fdfcf8}
+@media (min-width:761px){section[aria-labelledby="pitch-h"]{background:#f3ebda!important}}
