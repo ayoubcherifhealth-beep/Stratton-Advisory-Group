@@ -382,3 +382,6 @@ body{background:var(--paper,#fff)!important}
 /* Header pushed a little higher (Nov 19) */
 .site-header{padding-top:max(calc(env(safe-area-inset-top) - 18px),calc(env(safe-area-inset-top) * .5))!important}
 .site-header .nav{height:40px}
+/* Lighter cream backgrounds (Nov 21) */
+body:has(#qualify) .hero{background:linear-gradient(180deg,#fefdfa 0%,#fffefd 70%,#fff 100%)!important}
+.m-advisor{background:#faf9f5!important}
