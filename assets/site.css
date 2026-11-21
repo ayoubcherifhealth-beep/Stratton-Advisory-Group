@@ -10,3 +10,12 @@
 .ppo-note{background:#faf6ec;border-left:3px solid var(--gold);padding:.9rem 1.1rem;margin:1rem 0 1.4rem;border-radius:0 8px 8px 0}
 .remote-note{margin:.6rem 0 1rem}
 .announce .cd{display:none!important}
+.fp-split{align-items:start}
+.fp-split .table-wrap{margin:.8rem 0}
+.ex-head{font-size:.95rem;margin:0}
+.ex-note{font-size:.9rem;color:var(--muted,#5b6475);margin:.4rem 0 1.2rem}
+.fp-link{background:#faf6ec;border-left:3px solid var(--gold);padding:.8rem 1rem;border-radius:0 8px 8px 0;margin:1rem 0}
+.sec-tint{background:#fbf8f1}
+.fp-table th small{font-weight:400;opacity:.75;text-transform:none;letter-spacing:0}
+.fp-table td{white-space:nowrap}
+.fp-link,.fp-link a{color:var(--ink,#0b1633)}
