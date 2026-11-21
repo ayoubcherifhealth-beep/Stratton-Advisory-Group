@@ -385,3 +385,8 @@ body{background:var(--paper,#fff)!important}
 /* Lighter cream backgrounds (Nov 21) */
 body:has(#qualify) .hero{background:linear-gradient(180deg,#fefdfa 0%,#fffefd 70%,#fff 100%)!important}
 .m-advisor{background:#faf9f5!important}
+#by-state .table-wrap{overflow-x:visible}
+#by-state table{width:100%!important;min-width:0!important;table-layout:auto!important;font-size:.92rem}
+#by-state tr>*:nth-child(2),#by-state tr>*:nth-child(3),#by-state tr>*:nth-child(5){display:none!important}
+#by-state th,#by-state td{padding:.55rem .6rem!important;white-space:nowrap;word-break:normal!important}
+#by-state thead th{white-space:normal}
